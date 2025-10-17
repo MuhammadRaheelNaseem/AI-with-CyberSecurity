@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-16T10:06:08.757602",
+  "analysis_type": "Anomaly Detection",
+  "summary": {
+    "total_samples": 230,
+    "anomalies_detected": 36,
+    "anomaly_percentage": 15.65,
+    "model_agreement_rate": 13.48,
+    "average_confidence": 0.43
+  },
+  "model_performance": {
+    "isolation_forest_anomalies": 32,
+    "dbscan_anomalies": 230,
+    "svm_anomalies": 35,
+    "models_used": [
+      "Isolation Forest",
+      "DBSCAN",
+      "One-Class SVM"
+    ]
+  },
+  "details": {
+    "feature_count": 10,
+    "models_trained": true,
+    "recommendations": [
+      "Investigate high-confidence anomalies first",
+      "Review model agreement for reliable detection",
+      "Retrain models with new data periodically"
+    ]
+  }
+}

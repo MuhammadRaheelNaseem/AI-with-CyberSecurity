@@ -1,0 +1,148 @@
+{
+  "performance_metrics": {
+    "text_classifier": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.9047619047619048,
+      "classes": [
+        "command_injection",
+        "normal",
+        "path_traversal",
+        "sql_injection",
+        "xss"
+      ]
+    },
+    "anomaly_detector": {
+      "train_accuracy": 0.06666666666666667,
+      "test_accuracy": 0.07083333333333333
+    },
+    "training_date": "2025-10-16T12:29:55.281256",
+    "model_versions": {
+      "text_model": "RandomForest",
+      "anomaly_model": "IsolationForest",
+      "vectorizer": "TF-IDF"
+    }
+  },
+  "demo_results": [
+    {
+      "input": "normal search query",
+      "threat_detection": {
+        "input": "normal search query",
+        "prediction": "normal",
+        "confidence": 0.6867309694431607,
+        "threat_level": "LOW",
+        "probabilities": {
+          "command_injection": 0.15818203694897662,
+          "normal": 0.6867309694431607,
+          "path_traversal": 0.036251716581238345,
+          "sql_injection": 0.07232091981299517,
+          "xss": 0.04651435721362918
+        },
+        "is_malicious": false
+      },
+      "anomaly_detection": {
+        "is_anomaly": false,
+        "anomaly_score": 0.019706787607054577,
+        "confidence": 0.504926537464657,
+        "threat_level": "LOW"
+      },
+      "overall_threat_level": "LOW"
+    },
+    {
+      "input": "' OR 1=1--",
+      "threat_detection": {
+        "input": "' OR 1=1--",
+        "prediction": "sql_injection",
+        "confidence": 0.9433063808148597,
+        "threat_level": "CRITICAL",
+        "probabilities": {
+          "command_injection": 0.013333962042813152,
+          "normal": 0.025327037665746448,
+          "path_traversal": 0.0011508287656682593,
+          "sql_injection": 0.9433063808148597,
+          "xss": 0.01688179071091238
+        },
+        "is_malicious": true
+      },
+      "anomaly_detection": {
+        "is_anomaly": true,
+        "anomaly_score": -0.08606116194225255,
+        "confidence": 0.4784979791452261,
+        "threat_level": "HIGH"
+      },
+      "overall_threat_level": "CRITICAL"
+    },
+    {
+      "input": "<script>alert('xss')</script>",
+      "threat_detection": {
+        "input": "<script>alert('xss')</script>",
+        "prediction": "xss",
+        "confidence": 0.9341454428946225,
+        "threat_level": "HIGH",
+        "probabilities": {
+          "command_injection": 0.01967930767949977,
+          "normal": 0.029194701034717614,
+          "path_traversal": 0.0016682785299806577,
+          "sql_injection": 0.015312269861179464,
+          "xss": 0.9341454428946225
+        },
+        "is_malicious": true
+      },
+      "anomaly_detection": {
+        "is_anomaly": true,
+        "anomaly_score": -0.08512240658611026,
+        "confidence": 0.47873223867437675,
+        "threat_level": "HIGH"
+      },
+      "overall_threat_level": "HIGH"
+    },
+    {
+      "input": "../../../etc/passwd",
+      "threat_detection": {
+        "input": "../../../etc/passwd",
+        "prediction": "path_traversal",
+        "confidence": 0.8955154649389648,
+        "threat_level": "HIGH",
+        "probabilities": {
+          "command_injection": 0.05980233876664094,
+          "normal": 0.02995928471421806,
+          "path_traversal": 0.8955154649389648,
+          "sql_injection": 0.00799150379094385,
+          "xss": 0.0067314077892322135
+        },
+        "is_malicious": true
+      },
+      "anomaly_detection": {
+        "is_anomaly": true,
+        "anomaly_score": -0.08576833130762263,
+        "confidence": 0.4785710518770522,
+        "threat_level": "HIGH"
+      },
+      "overall_threat_level": "HIGH"
+    },
+    {
+      "input": "; ls -la",
+      "threat_detection": {
+        "input": "; ls -la",
+        "prediction": "command_injection",
+        "confidence": 0.5276612798831082,
+        "threat_level": "CRITICAL",
+        "probabilities": {
+          "command_injection": 0.5276612798831082,
+          "normal": 0.23989285142853153,
+          "path_traversal": 0.06259810504837562,
+          "sql_injection": 0.1484139401475556,
+          "xss": 0.0214338234924292
+        },
+        "is_malicious": true
+      },
+      "anomaly_detection": {
+        "is_anomaly": true,
+        "anomaly_score": -0.08576833130762263,
+        "confidence": 0.4785710518770522,
+        "threat_level": "HIGH"
+      },
+      "overall_threat_level": "CRITICAL"
+    }
+  ],
+  "training_date": "2025-10-16T12:29:57.135981"
+}

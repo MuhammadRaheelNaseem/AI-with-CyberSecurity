@@ -1,0 +1,43 @@
+{
+  "report_time": "2025-10-15T21:19:54.494922",
+  "model_health": {
+    "timestamp": "2025-10-15T21:19:54.448038",
+    "model_loaded": true,
+    "model_trained": true,
+    "save_date": "2025-10-15T20:59:32.580056",
+    "performance_metrics": {
+      "text_classifier": {
+        "train_accuracy": 0.9795918367346939,
+        "test_accuracy": 0.9230769230769231,
+        "classes": [
+          "command_injection",
+          "normal",
+          "path_traversal",
+          "sql_injection",
+          "xss"
+        ]
+      },
+      "anomaly_detector": {
+        "train_accuracy": 0.06666666666666667,
+        "test_accuracy": 0.07083333333333333
+      },
+      "training_date": "2025-10-15T20:59:32.577024",
+      "model_versions": {
+        "text_model": "RandomForest",
+        "anomaly_model": "IsolationForest",
+        "vectorizer": "TF-IDF"
+      }
+    },
+    "components_loaded": {
+      "text_model": true,
+      "vectorizer": true,
+      "anomaly_model": true,
+      "scaler": true
+    },
+    "all_components_healthy": true
+  },
+  "performance_metrics": {
+    "error": "RealTimeThreatDetector.process_attack_data() missing 1 required positional argument: 'attack_data'"
+  },
+  "recommendations": []
+}

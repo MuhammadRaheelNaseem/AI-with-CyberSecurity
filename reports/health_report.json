@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-15T12:54:49.880128",
+  "system": {
+    "cpu_usage_percent": 24.6,
+    "memory_usage_percent": 89.3,
+    "memory_available_gb": 0.84,
+    "disk_usage_percent": 49.4,
+    "disk_free_gb": 240.78
+  },
+  "service": {
+    "status_code": 200,
+    "response_time_seconds": 0.06,
+    "service_available": true
+  },
+  "endpoints": {
+    "products": {
+      "status_code": 500,
+      "response_time": 0.111882
+    },
+    "login": {
+      "status_code": 500,
+      "response_time": 0.081646
+    },
+    "challenges": {
+      "status_code": 200,
+      "response_time": 0.25811
+    }
+  },
+  "overall_health": "UNHEALTHY"
+}

@@ -1,0 +1,107 @@
+2025-10-15 16:16:09,309 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 16:16:09,310 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 16:16:09,391 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 16:16:09,968 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 16:16:10,527 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 16:16:11,087 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 16:16:11,650 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 16:16:12,153 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 16:16:12,341 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 16:16:13,358 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 16:16:14,382 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 16:16:15,388 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 16:16:34,707 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 16:16:34,709 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 16:16:38,870 - XSS - ERROR - Error testing payload 1: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Cscript%3Ealert%28%27XSS%27%29%3C/script%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232AB507CB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:16:42,999 - XSS - ERROR - Error testing payload 2: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Cimg%20src%3Dx%20onerror%3Dalert%28%27XSS%27%29%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232AB4F7D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:16:52,432 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 16:16:52,435 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 16:16:56,586 - XSS - ERROR - Error testing payload 1: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Cscript%3Ealert%28%27XSS%27%29%3C/script%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047A987CB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:00,701 - XSS - ERROR - Error testing payload 2: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Cimg%20src%3Dx%20onerror%3Dalert%28%27XSS%27%29%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047A977D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:04,783 - XSS - ERROR - Error testing payload 3: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%27%3E%3Csvg%20onload%3Dalert%281%29%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047AA782D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:08,838 - XSS - ERROR - Error testing payload 4: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Cbody%20onload%3Dalert%28%27XSS%27%29%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047A95F5C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:12,935 - XSS - ERROR - Error testing payload 5: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /rest/products/search?q=%3Ciframe%20src%3Djavascript%3Aalert%28%27XSS%27%29%3E%3C/iframe%3E (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047A95F950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:12,938 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 16:17:21,156 - XSS - ERROR - Error submitting feedback payload 1: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /api/Feedbacks (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047AA1A140>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:25,261 - XSS - ERROR - Error submitting feedback payload 2: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /api/Feedbacks (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047AA1A580>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:29,356 - XSS - ERROR - Error submitting feedback payload 3: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /api/Feedbacks (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002047AA1A7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-15 16:17:29,363 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 16:17:54,409 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 16:17:54,410 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 16:17:54,574 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 16:17:56,007 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 16:17:56,841 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 16:17:57,407 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 16:17:57,980 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 16:17:58,483 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 16:17:58,679 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 16:17:59,699 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 16:18:00,710 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 16:18:01,716 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 17:59:50,137 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 17:59:50,143 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 17:59:51,150 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 17:59:51,764 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 17:59:52,343 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 17:59:53,012 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 17:59:53,575 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 17:59:54,077 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 17:59:54,398 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 17:59:55,424 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 17:59:56,446 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 17:59:57,459 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 20:09:13,774 - XSS - INFO - Testing payload: <script>alert('XSS')</script>
+2025-10-15 20:09:15,219 - XSS - INFO - Testing payload: <img src=x onerror=alert('XSS')>
+2025-10-15 20:09:16,282 - XSS - INFO - Testing payload: <svg onload=alert('XSS')>
+2025-10-15 20:09:17,342 - XSS - INFO - Testing payload: <body onload=alert('XSS')>
+2025-10-15 20:09:18,441 - XSS - INFO - Testing payload: <iframe src=javascript:alert('XSS')>
+2025-10-15 20:09:19,488 - XSS - INFO - Testing payload: <input onfocus=alert('XSS') autofocus>
+2025-10-15 20:09:20,838 - XSS - ERROR - Feedback XSS error: Expecting value: line 1 column 1 (char 0)
+2025-10-15 20:09:28,973 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 20:09:28,973 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 20:09:29,016 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 20:09:29,549 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 20:09:30,095 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 20:09:30,630 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 20:09:31,171 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 20:09:31,672 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 20:09:31,763 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 20:09:32,783 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 20:09:33,795 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 20:09:34,801 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 20:34:12,795 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 20:34:12,800 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 20:34:12,882 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 20:34:13,439 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 20:34:14,016 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 20:34:14,581 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 20:34:15,149 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 20:34:15,651 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 20:34:15,958 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 20:34:16,982 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 20:34:18,008 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 20:34:19,013 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-15 20:34:47,736 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-15 20:34:47,742 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-15 20:34:47,857 - XSS - INFO - Payload 1: No reflection found
+2025-10-15 20:34:48,404 - XSS - INFO - Payload 2: No reflection found
+2025-10-15 20:34:49,038 - XSS - INFO - Payload 3: No reflection found
+2025-10-15 20:34:49,627 - XSS - INFO - Payload 4: No reflection found
+2025-10-15 20:34:50,173 - XSS - INFO - Payload 5: No reflection found
+2025-10-15 20:34:50,675 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-15 20:34:50,885 - XSS - INFO - Payload 1: Rejected by server
+2025-10-15 20:34:51,908 - XSS - INFO - Payload 2: Rejected by server
+2025-10-15 20:34:52,934 - XSS - INFO - Payload 3: Rejected by server
+2025-10-15 20:34:53,942 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities
+2025-10-16 02:39:00,613 - XSS - INFO - 🧪 Starting Comprehensive XSS Attack Simulation
+2025-10-16 02:39:00,614 - XSS - INFO - 🔍 Testing Reflected XSS - Search Function
+2025-10-16 02:39:00,710 - XSS - INFO - Payload 1: No reflection found
+2025-10-16 02:39:01,268 - XSS - INFO - Payload 2: No reflection found
+2025-10-16 02:39:01,800 - XSS - INFO - Payload 3: No reflection found
+2025-10-16 02:39:02,324 - XSS - INFO - Payload 4: No reflection found
+2025-10-16 02:39:02,869 - XSS - INFO - Payload 5: No reflection found
+2025-10-16 02:39:03,370 - XSS - INFO - 🧪 Testing Stored XSS - Feedback Submission
+2025-10-16 02:39:03,604 - XSS - INFO - Payload 1: Rejected by server
+2025-10-16 02:39:04,616 - XSS - INFO - Payload 2: Rejected by server
+2025-10-16 02:39:05,622 - XSS - INFO - Payload 3: Rejected by server
+2025-10-16 02:39:06,632 - XSS - INFO - 📄 XSS report saved: 0 reflected, 0 stored vulnerabilities

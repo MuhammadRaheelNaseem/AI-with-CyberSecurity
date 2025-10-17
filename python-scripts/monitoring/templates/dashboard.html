@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Security Training Monitor</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+        body { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); min-height: 100vh; padding: 20px; color: white; }
+        .container { max-width: 1800px; margin: 0 auto; }
+        .header { text-align: center; padding: 30px; margin-bottom: 20px; background: rgba(255,255,255,0.05); border-radius: 15px; backdrop-filter: blur(10px); }
+        .header h1 { font-size: 2.8em; margin-bottom: 10px; background: linear-gradient(45deg, #00b4db, #0083b0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .header p { font-size: 1.2em; opacity: 0.9; margin-bottom: 15px; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .card { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(15px); border-radius: 15px; padding: 25px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 8px 32px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid rgba(255, 255, 255, 0.2); display: flex; align-items: center; gap: 12px; font-size: 1.3em; }
+        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .stat-item { text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.25); border-radius: 12px; transition: all 0.3s ease; }
+        .stat-item:hover { background: rgba(0, 0, 0, 0.4); transform: scale(1.05); }
+        .stat-value { font-size: 32px; font-weight: bold; margin: 12px 0; }
+        .stat-label { font-size: 14px; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
+        .alert-item { padding: 15px; margin: 10px 0; border-radius: 10px; border-left: 5px solid; transition: all 0.3s ease; }
+        .alert-item:hover { transform: translateX(5px); }
+        .alert-item.critical { background: linear-gradient(135deg, rgba(255,0,0,0.2), rgba(255,0,0,0.1)); border-left-color: #ff4444; }
+        .alert-item.high { background: linear-gradient(135deg, rgba(255,107,107,0.2), rgba(255,107,107,0.1)); border-left-color: #ff6b6b; }
+        .alert-item.medium { background: linear-gradient(135deg, rgba(255,193,7,0.2), rgba(255,193,7,0.1)); border-left-color: #ffc107; }
+        .alert-item.low { background: linear-gradient(135deg, rgba(76,175,80,0.2), rgba(76,175,80,0.1)); border-left-color: #4CAF50; }
+        .alert-item.info { background: linear-gradient(135deg, rgba(33,150,243,0.2), rgba(33,150,243,0.1)); border-left-color: #2196F3; }
+        .chart-container { height: 320px; margin-top: 20px; }
+        .btn { background: linear-gradient(45deg, #667eea, #764ba2); color: white; border: none; padding: 12px 24px; border-radius: 10px; cursor: pointer; margin: 5px; font-weight: 500; transition: all 0.3s ease; font-size: 14px; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .btn-danger { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+        .btn-success { background: linear-gradient(45deg, #00b09b, #96c93d); }
+        .btn-warning { background: linear-gradient(45deg, #f46b45, #eea849); }
+        .btn-info { background: linear-gradient(45deg, #00c6ff, #0072ff); }
+        .btn-ai { background: linear-gradient(45deg, #ff8a00, #da1b60); }
+        .log-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 12px; padding: 12px 0; font-size: 13px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); transition: background 0.3s ease; }
+        .log-row:hover { background: rgba(255,255,255,0.05); }
+        .log-header { font-weight: bold; padding: 15px 0; border-bottom: 2px solid rgba(255, 255, 255, 0.2); background: rgba(0,0,0,0.2); border-radius: 8px; }
+        .ai-risk-low { color: #4CAF50; }
+        .ai-risk-medium { color: #ffc107; }
+        .ai-risk-high { color: #ff6b6b; }
+        .ai-risk-critical { color: #ff4444; }
+        .control-panel { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+        .ai-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .health-card { background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%); }
+        .attack-card { background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); }
+        .model-status { display: flex; align-items: center; gap: 12px; margin-top: 15px; }
+        .model-loaded { color: #4CAF50; }
+        .model-not-loaded { color: #ff4444; }
+        .ai-console { margin-top: 20px; }
+        .ai-input { width: 100%; padding: 15px; border-radius: 10px; border: none; margin-top: 12px; background: rgba(0,0,0,0.3); color: white; font-size: 16px; }
+        .ai-input:focus { outline: none; box-shadow: 0 0 0 2px #667eea; }
+        .ai-result { margin-top: 15px; padding: 15px; border-radius: 10px; background: rgba(0,0,0,0.3); border-left: 5px solid; }
+        .file-structure { font-size: 13px; margin-top: 15px; }
+        .file-item { display: inline-block; background: rgba(255,255,255,0.1); padding: 5px 12px; margin: 4px; border-radius: 6px; font-size: 12px; transition: all 0.3s ease; }
+        .file-item:hover { background: rgba(255,255,255,0.2); transform: scale(1.05); }
+        .session-info { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin-top: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .tab-container { margin-top: 20px; }
+        .tab-buttons { display: flex; gap: 8px; margin-bottom: 15px; flex-wrap: wrap; }
+        .tab-button { padding: 10px 20px; background: rgba(255,255,255,0.1); border: none; border-radius: 8px; color: white; cursor: pointer; transition: all 0.3s ease; }
+        .tab-button:hover { background: rgba(255,255,255,0.2); }
+        .tab-button.active { background: linear-gradient(45deg, #667eea, #764ba2); }
+        .tab-content { display: none; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 10px; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s ease; }
+        .status-indicator { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+        .status-online { background: #4CAF50; box-shadow: 0 0 10px #4CAF50; }
+        .status-offline { background: #ff4444; }
+        .status-warning { background: #ffc107; }
+        .progress-bar { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; margin-top: 8px; }
+        .progress-fill { height: 100%; background: linear-gradient(45deg, #00b09b, #96c93d); border-radius: 4px; transition: width 0.5s ease; }
+        .attack-progress { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+        .system-progress { background: linear-gradient(45deg, #2196F3, #21CBF3); }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        .grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .full-width { grid-column: 1 / -1; }
+        .console-output { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; height: 200px; overflow-y: auto; margin-top: 15px; font-size: 13px; }
+        .refresh-btn { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: white; padding: 8px 12px; border-radius: 6px; cursor: pointer; transition: all 0.3s ease; }
+        .refresh-btn:hover { background: rgba(255,255,255,0.2); transform: rotate(180deg); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header pulse">
+            <h1><i class="fas fa-robot"></i> AI-Powered Security Training Monitor</h1>
+            <p>Real-time attack detection, behavioral analysis, and automated prevention</p>
+            <div class="session-info">
+                <div>
+                    <strong><i class="fas fa-user"></i> Session:</strong> 
+                    <span id="sessionUserId">--</span> | 
+                    <span id="sessionDuration">--</span> |
+                    <span id="sessionStart">--</span>
+                </div>
+                <div>
+                    <span class="status-indicator" id="systemStatus"></span>
+                    <span id="systemStatusText">System Status</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- AI Insights Card -->
+            <div class="card ai-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-brain"></i> AI Behavioral Analysis</h3>
+                    <button class="refresh-btn" onclick="updateDashboard()"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="riskScore">--</div>
+                        <div class="stat-label">Risk Score</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="riskBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="errorRate">--%</div>
+                        <div class="stat-label">Error Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="responseTime">--s</div>
+                        <div class="stat-label">Avg Response Time</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalRequests">--</div>
+                        <div class="stat-label">Total Requests</div>
+                    </div>
+                </div>
+                <div id="aiRecommendations" style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.3); border-radius: 10px;">
+                    <strong><i class="fas fa-lightbulb"></i> AI Recommendations:</strong>
+                    <ul id="recommendationsList" style="margin-top: 12px; padding-left: 25px;"></ul>
+                </div>
+            </div>
+
+            <!-- System Health Card -->
+            <div class="card health-card">
+                <h3><i class="fas fa-heartbeat"></i> System Health</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="cpuPercent">--%</div>
+                        <div class="stat-label">CPU Usage</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill system-progress" id="cpuBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="memoryPercent">--%</div>
+                        <div class="stat-label">Memory Usage</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill system-progress" id="memoryBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="diskPercent">--%</div>
+                        <div class="stat-label">Disk Usage</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill system-progress" id="diskBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="modelHealth">--</div>
+                        <div class="stat-label">Model Health</div>
+                    </div>
+                </div>
+                <div class="control-panel">
+                    <button class="btn btn-success" onclick="runHealthCheck()"><i class="fas fa-stethoscope"></i> Health Check</button>
+                    <button class="btn btn-info" onclick="loadReports()"><i class="fas fa-redo"></i> Reload Data</button>
+                </div>
+            </div>
+
+            <!-- Attack Statistics Card -->
+            <div class="card attack-card">
+                <h3><i class="fas fa-shield-alt"></i> Attack Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalAttacks">0</div>
+                        <div class="stat-label">Total Attacks</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="successRate">0%</div>
+                        <div class="stat-label">Avg Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="sqlInjectionCount">0</div>
+                        <div class="stat-label">SQL Injection</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="xssCount">0</div>
+                        <div class="stat-label">XSS Attacks</div>
+                    </div>
+                </div>
+                <div id="attackProgress" style="margin-top: 15px; display: none;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Attack Progress</span>
+                        <span id="attackProgressText">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill attack-progress" id="attackProgressBar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Status Card -->
+            <div class="card">
+                <h3><i class="fas fa-cogs"></i> AI Model Status</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="modelStatus">--</div>
+                        <div class="stat-label">Status</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="loadedModels">--/5</div>
+                        <div class="stat-label">Models Loaded</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="activeSession">Yes</div>
+                        <div class="stat-label">Active Session</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="lastUpdate">--:--</div>
+                        <div class="stat-label">Last Update</div>
+                    </div>
+                </div>
+                <div class="control-panel">
+                    <button class="btn btn-ai" onclick="trainModel()"><i class="fas fa-graduation-cap"></i> Train Model</button>
+                    <button class="btn btn-warning" onclick="loadModels()"><i class="fas fa-download"></i> Reload Models</button>
+                    <button class="btn btn-info" onclick="fixJsonFiles()"><i class="fas fa-wrench"></i> Fix JSON</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Panels Row -->
+        <div class="dashboard-grid">
+            <!-- Attack Controls -->
+            <div class="card full-width">
+                <h3><i class="fas fa-gamepad"></i> Attack Simulation Controls</h3>
+                <div class="control-panel">
+                    <button class="btn btn-danger" onclick="runAttack('sql_injection')">
+                        <i class="fas fa-database"></i> SQL Injection
+                    </button>
+                    <button class="btn btn-danger" onclick="runAttack('brute_force')">
+                        <i class="fas fa-hammer"></i> Brute Force
+                    </button>
+                    <button class="btn btn-danger" onclick="runAttack('xss')">
+                        <i class="fas fa-code"></i> XSS Attack
+                    </button>
+                    <button class="btn btn-danger" onclick="runAttack('path_traversal')">
+                        <i class="fas fa-folder-open"></i> Path Traversal
+                    </button>
+                    <button class="btn btn-warning" onclick="runAttack('security_controls')">
+                        <i class="fas fa-shield-alt"></i> Security Controls
+                    </button>
+                    <button class="btn btn-info" onclick="runAttack('baseline')">
+                        <i class="fas fa-chart-line"></i> Baseline Activity
+                    </button>
+                    <button class="btn btn-success" onclick="runAllAttacks()">
+                        <i class="fas fa-play-circle"></i> Run All Attacks
+                    </button>
+                    <button class="btn btn-warning" onclick="stopAllAttacks()">
+                        <i class="fas fa-stop-circle"></i> Stop All
+                    </button>
+                </div>
+                <div id="attackConsole" class="console-output" style="display: none;">
+                    <div id="consoleContent"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Console & File Structure Row -->
+        <div class="dashboard-grid">
+            <!-- AI Threat Detection -->
+            <div class="card">
+                <h3><i class="fas fa-search"></i> AI Threat Detection Console</h3>
+                <div class="ai-console">
+                    <input type="text" id="aiInput" class="ai-input" placeholder="Enter text to analyze (e.g., ' OR 1=1--, <script>alert('xss')</script>)">
+                    <button class="btn btn-ai" onclick="analyzeTextInput()"><i class="fas fa-search"></i> Analyze</button>
+                    <div id="aiResult" class="ai-result"></div>
+                </div>
+                <div style="margin-top: 15px;">
+                    <strong><i class="fas fa-bolt"></i> Quick Tests:</strong>
+                    <div style="margin-top: 10px;">
+                        <span class="file-item" onclick="document.getElementById('aiInput').value = \"' OR 1=1--\">SQL Injection</span>
+                        <span class="file-item" onclick="document.getElementById('aiInput').value = \"<script>alert('xss')</script>\">XSS</span>
+                        <span class="file-item" onclick="document.getElementById('aiInput').value = \"../../../etc/passwd\">Path Traversal</span>
+                        <span class="file-item" onclick="document.getElementById('aiInput').value = \"normal user input\">Normal Text</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Structure Monitor -->
+            <div class="card">
+                <h3><i class="fas fa-folder-tree"></i> File Structure Monitor</h3>
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" onclick="showTab('reports-tab')">Reports</button>
+                        <button class="tab-button" onclick="showTab('logs-tab')">Logs</button>
+                        <button class="tab-button" onclick="showTab('models-tab')">Models</button>
+                        <button class="tab-button" onclick="showTab('attacks-tab')">Attacks</button>
+                    </div>
+                    
+                    <div id="reports-tab" class="tab-content active">
+                        <strong><i class="fas fa-chart-bar"></i> Reports Directory:</strong>
+                        <div id="reportsFiles" class="file-structure"></div>
+                    </div>
+                    
+                    <div id="logs-tab" class="tab-content">
+                        <strong><i class="fas fa-file-alt"></i> Logs Directory:</strong>
+                        <div id="logsFiles" class="file-structure"></div>
+                    </div>
+                    
+                    <div id="models-tab" class="tab-content">
+                        <strong><i class="fas fa-robot"></i> Models Directory:</strong>
+                        <div id="modelsFiles" class="file-structure"></div>
+                    </div>
+                    
+                    <div id="attacks-tab" class="tab-content">
+                        <strong><i class="fas fa-bug"></i> Attacks Directory:</strong>
+                        <div id="attacksFiles" class="file-structure"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3><i class="fas fa-chart-pie"></i> Attack Success Rates</h3>
+                <div id="successRateChart" class="chart-container"></div>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-chart-line"></i> Attack Timeline</h3>
+                <div id="attackTimelineChart" class="chart-container"></div>
+            </div>
+        </div>
+
+        <!-- Alerts and Logs Row -->
+        <div class="dashboard-grid">
+            <!-- Security Alerts -->
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-bell"></i> Security Alerts</h3>
+                    <button class="btn btn-warning" onclick="acknowledgeAllAlerts()"><i class="fas fa-check-double"></i> Ack All</button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalAlerts">0</div>
+                        <div class="stat-label">Total Alerts</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="unacknowledgedAlerts">0</div>
+                        <div class="stat-label">Unacknowledged</div>
+                    </div>
+                </div>
+                <div id="alertsList" style="max-height: 400px; overflow-y: auto; margin-top: 15px;"></div>
+            </div>
+
+            <!-- Live Request Logs -->
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-list-alt"></i> Live Request Logs</h3>
+                    <button class="btn btn-info" onclick="clearLogs()"><i class="fas fa-trash"></i> Clear</button>
+                </div>
+                <div class="log-header">
+                    <div class="log-row">
+                        <div><i class="fas fa-clock"></i> Timestamp</div>
+                        <div><i class="fas fa-link"></i> Endpoint</div>
+                        <div><i class="fas fa-code"></i> Status</div>
+                        <div><i class="fas fa-tachometer-alt"></i> Response Time</div>
+                        <div><i class="fas fa-tag"></i> Source</div>
+                    </div>
+                </div>
+                <div id="recentLogs" style="max-height: 400px; overflow-y: auto;"></div>
+            </div>
+        </div>
+
+        <!-- System Information Footer -->
+        <div class="card full-width" style="margin-top: 20px; text-align: center; background: rgba(0,0,0,0.3);">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value" id="uptime">--</div>
+                    <div class="stat-label">System Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="totalMemory">--</div>
+                    <div class="stat-label">Total Memory</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="activeProcesses">--</div>
+                    <div class="stat-label">Active Processes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="networkActivity">--</div>
+                    <div class="stat-label">Network Activity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let attackInProgress = false;
+        let currentAttack = null;
+        let attackProgress = 0;
+        let sessionStartTime = new Date();
+
+        // Tab management
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Main dashboard update function
+        function updateDashboard() {
+            // Session Info
+            fetch('/api/session-info')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('sessionUserId').textContent = data.user_id || '--';
+                    const duration = Math.floor(data.duration_seconds || 0);
+                    document.getElementById('sessionDuration').textContent = formatDuration(duration);
+                    document.getElementById('sessionStart').textContent = new Date(data.start_time).toLocaleTimeString();
+                });
+
+            // AI Insights
+            fetch('/api/ai-insights')
+                .then(r => r.json())
+                .then(data => {
+                    const riskScore = data.risk_score || 0;
+                    document.getElementById('riskScore').textContent = riskScore;
+                    document.getElementById('riskScore').className = 'stat-value ' + getRiskClass(riskScore);
+                    document.getElementById('riskBar').style.width = riskScore + '%';
+                    
+                    document.getElementById('errorRate').textContent = (data.error_rate || 0) + '%';
+                    document.getElementById('responseTime').textContent = (data.avg_response_time || 0).toFixed(2) + 's';
+                    document.getElementById('totalRequests').textContent = data.total_requests || '--';
+                    
+                    const recList = document.getElementById('recommendationsList');
+                    recList.innerHTML = '';
+                    if (data.recommendations && data.recommendations.length) {
+                        data.recommendations.forEach(rec => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<i class="fas fa-arrow-right"></i> ${rec}`;
+                            recList.appendChild(li);
+                        });
+                    } else {
+                        recList.innerHTML = '<li><i class="fas fa-check"></i> No immediate concerns detected</li>';
+                    }
+                });
+
+            // Attack Stats
+            fetch('/api/attack-stats')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('totalAttacks').textContent = data.total_attacks || 0;
+                    document.getElementById('successRate').textContent = (data.avg_success_rate || 0).toFixed(1) + '%';
+                    if (data.attack_types) {
+                        document.getElementById('sqlInjectionCount').textContent = data.attack_types['Sql Injection'] || data.attack_types['SQL Injection'] || 0;
+                        document.getElementById('xssCount').textContent = data.attack_types['Xss'] || data.attack_types['XSS'] || 0;
+                    }
+                    updateCharts(data);
+                });
+
+            // Alerts
+            fetch('/api/alerts')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('totalAlerts').textContent = data.total_alerts || 0;
+                    document.getElementById('unacknowledgedAlerts').textContent = data.unacknowledged_alerts || 0;
+                    updateAlertsList(data.recent_alerts || []);
+                });
+
+            // System Health
+            fetch('/api/system-health')
+                .then(r => r.json())
+                .then(data => {
+                    if (!data.error) {
+                        const cpu = data.cpu_percent || 0;
+                        const memory = data.memory_percent || 0;
+                        const disk = data.disk_percent || 0;
+                        
+                        document.getElementById('cpuPercent').textContent = cpu.toFixed(1) + '%';
+                        document.getElementById('memoryPercent').textContent = memory.toFixed(1) + '%';
+                        document.getElementById('diskPercent').textContent = disk.toFixed(1) + '%';
+                        document.getElementById('modelHealth').textContent = data.model_health || '--';
+                        
+                        document.getElementById('cpuBar').style.width = cpu + '%';
+                        document.getElementById('memoryBar').style.width = memory + '%';
+                        document.getElementById('diskBar').style.width = disk + '%';
+                        
+                        // Update system status
+                        updateSystemStatus(cpu, memory, disk);
+                    }
+                });
+
+            // Timeline
+            fetch('/api/attack-timeline')
+                .then(r => r.json())
+                .then(data => updateTimelineChart(data));
+
+            // Recent Logs
+            fetch('/api/recent-logs?limit=15')
+                .then(r => r.json())
+                .then(data => updateRecentLogs(data));
+
+            // Model Status
+            fetch('/api/model-status')
+                .then(r => r.json())
+                .then(data => updateModelStatus(data));
+
+            // File Structure
+            fetch('/api/file-structure')
+                .then(r => r.json())
+                .then(data => updateFileStructure(data));
+
+            // Update last update time
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString();
+        }
+
+        function updateSystemStatus(cpu, memory, disk) {
+            const statusIndicator = document.getElementById('systemStatus');
+            const statusText = document.getElementById('systemStatusText');
+            
+            if (cpu > 80 || memory > 90 || disk > 90) {
+                statusIndicator.className = 'status-indicator status-warning pulse';
+                statusText.textContent = 'High Load';
+            } else if (cpu < 30 && memory < 50) {
+                statusIndicator.className = 'status-indicator status-online';
+                statusText.textContent = 'Optimal';
+            } else {
+                statusIndicator.className = 'status-indicator status-online';
+                statusText.textContent = 'Normal';
+            }
+        }
+
+        function getRiskClass(score) {
+            if (score >= 80) return 'ai-risk-critical';
+            if (score >= 60) return 'ai-risk-high';
+            if (score >= 40) return 'ai-risk-medium';
+            return 'ai-risk-low';
+        }
+
+        function formatDuration(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function updateFileStructure(data) {
+            // Reports
+            const reportsContainer = document.getElementById('reportsFiles');
+            reportsContainer.innerHTML = '';
+            if (data.reports && data.reports.length) {
+                data.reports.forEach(file => {
+                    const span = document.createElement('span');
+                    span.className = 'file-item';
+                    span.innerHTML = `<i class="fas fa-file-code"></i> ${file}`;
+                    reportsContainer.appendChild(span);
+                });
+            } else {
+                reportsContainer.innerHTML = '<div style="color: #ff6b6b;"><i class="fas fa-exclamation-triangle"></i> No report files found</div>';
+            }
+            
+            // Logs
+            const logsContainer = document.getElementById('logsFiles');
+            logsContainer.innerHTML = '';
+            if (data.logs) {
+                for (const [logType, files] of Object.entries(data.logs)) {
+                    if (files.length > 0) {
+                        const header = document.createElement('div');
+                        header.innerHTML = `<strong><i class="fas fa-folder"></i> ${logType}:</strong>`;
+                        logsContainer.appendChild(header);
+                        
+                        files.forEach(file => {
+                            const span = document.createElement('span');
+                            span.className = 'file-item';
+                            span.innerHTML = `<i class="fas fa-file-alt"></i> ${file}`;
+                            logsContainer.appendChild(span);
+                        });
+                    }
+                }
+            }
+            
+            // Models
+            const modelsContainer = document.getElementById('modelsFiles');
+            modelsContainer.innerHTML = '';
+            if (data.models && data.models.length) {
+                data.models.forEach(file => {
+                    const span = document.createElement('span');
+                    span.className = 'file-item';
+                    span.innerHTML = `<i class="fas fa-cube"></i> ${file}`;
+                    modelsContainer.appendChild(span);
+                });
+            } else {
+                modelsContainer.innerHTML = '<div style="color: #ff6b6b;"><i class="fas fa-exclamation-triangle"></i> No model files found</div>';
+            }
+            
+            // Attacks
+            const attacksContainer = document.getElementById('attacksFiles');
+            attacksContainer.innerHTML = '';
+            if (data.attacks && data.attacks.length) {
+                data.attacks.forEach(file => {
+                    const span = document.createElement('span');
+                    span.className = 'file-item';
+                    span.innerHTML = `<i class="fas fa-bug"></i> ${file}`;
+                    attacksContainer.appendChild(span);
+                });
+            } else {
+                attacksContainer.innerHTML = '<div style="color: #ff6b6b;"><i class="fas fa-exclamation-triangle"></i> No attack scripts found</div>';
+            }
+        }
+
+        function updateModelStatus(data) {
+            const statusEl = document.getElementById('modelStatus');
+            const loadedEl = document.getElementById('loadedModels');
+            
+            if (data.status === 'fully_loaded') {
+                statusEl.textContent = 'FULLY LOADED';
+                statusEl.className = 'stat-value model-loaded';
+                loadedEl.textContent = data.loaded_count + '/' + data.total_count;
+            } else if (data.status === 'partially_loaded') {
+                statusEl.textContent = 'PARTIALLY LOADED';
+                statusEl.className = 'stat-value ai-risk-medium';
+                loadedEl.textContent = data.loaded_count + '/' + data.total_count;
+            } else {
+                statusEl.textContent = 'NOT LOADED';
+                statusEl.className = 'stat-value model-not-loaded';
+                loadedEl.textContent = '0/' + data.total_count;
+            }
+        }
+
+        function analyzeTextInput() {
+            const inputText = document.getElementById('aiInput').value;
+            if (!inputText) {
+                showNotification('Please enter text to analyze', 'warning');
+                return;
+            }
+            
+            showNotification('Analyzing text for threats...', 'info');
+            
+            fetch('/api/analyze-text', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: inputText })
+            })
+            .then(r => r.json())
+            .then(data => {
+                const resultEl = document.getElementById('aiResult');
+                if (data.error) {
+                    resultEl.innerHTML = `<div style="color: #ff4444;"><i class="fas fa-exclamation-triangle"></i> Error: ${data.error}</div>`;
+                } else {
+                    const status = data.is_malicious ? '🚨 MALICIOUS' : '✅ NORMAL';
+                    const color = data.is_malicious ? '#ff4444' : '#4CAF50';
+                    const icon = data.is_malicious ? 'fa-skull-crossbones' : 'fa-shield-check';
+                    resultEl.innerHTML = `
+                        <div style="color: ${color}; font-weight: bold; font-size: 18px;">
+                            <i class="fas ${icon}"></i> ${status}
+                        </div>
+                        <div><strong>Type:</strong> ${data.prediction}</div>
+                        <div><strong>Confidence:</strong> ${(data.confidence * 100).toFixed(1)}%</div>
+                        <div><strong>Threat Level:</strong> <span style="color: ${color}">${data.threat_level}</span></div>
+                        <div><strong>Input:</strong> "${data.input}"</div>
+                    `;
+                    resultEl.style.borderLeftColor = color;
+                    
+                    if (data.is_malicious) {
+                        showNotification(`Threat detected: ${data.prediction}`, 'danger');
+                    } else {
+                        showNotification('No threats detected in input', 'success');
+                    }
+                }
+            })
+            .catch(error => {
+                document.getElementById('aiResult').innerHTML = `<div style="color: #ff4444;"><i class="fas fa-exclamation-triangle"></i> Network error: ${error}</div>`;
+            });
+        }
+
+        function loadReports() {
+            showNotification('Reloading reports and data...', 'info');
+            fetch('/api/load-reports', { method: 'POST' })
+                .then(r => r.json())
+                .then(data => {
+                    showNotification('Reports reloaded successfully!', 'success');
+                    updateDashboard();
+                })
+                .catch(error => {
+                    showNotification('Error reloading reports', 'danger');
+                });
+        }
+
+        function loadModels() {
+            showNotification('Reloading AI models...', 'info');
+            setTimeout(() => {
+                location.reload();
+            }, 1000);
+        }
+
+        function trainModel() {
+            if (confirm('This will train the AI model. This may take a few minutes. Continue?')) {
+                showNotification('Training AI model started...', 'info');
+                fetch('/api/train-model', { method: 'POST' })
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.status === 'training_completed') {
+                            showNotification('Model training completed successfully!', 'success');
+                            updateDashboard();
+                        } else {
+                            showNotification('Model training failed: ' + (data.error || 'Unknown error'), 'danger');
+                        }
+                    })
+                    .catch(error => {
+                        showNotification('Training request failed', 'danger');
+                    });
+            }
+        }
+
+        function fixJsonFiles() {
+            showNotification('Fixing corrupted JSON files...', 'info');
+            // This would call your JSON fix endpoint
+            fetch('/api/fix-json/anomaly_detection_report.json', { method: 'POST' })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.status === 'fixed') {
+                        showNotification('JSON files fixed successfully!', 'success');
+                        loadReports();
+                    } else {
+                        showNotification('Failed to fix JSON files', 'danger');
+                    }
+                });
+        }
+
+        function updateRecentLogs(logs) {
+            const container = document.getElementById('recentLogs');
+            container.innerHTML = '';
+            logs.forEach(log => {
+                const div = document.createElement('div');
+                div.className = 'log-row';
+                
+                const statusClass = log.status_code >= 400 ? 'ai-risk-high' : 
+                                  log.status_code >= 300 ? 'ai-risk-medium' : 'ai-risk-low';
+                
+                div.innerHTML = `
+                    <div><i class="fas fa-clock"></i> ${new Date(log.timestamp).toLocaleTimeString()}</div>
+                    <div title="${log.endpoint}"><i class="fas fa-link"></i> ${log.endpoint.length > 25 ? log.endpoint.substring(0, 22) + '...' : log.endpoint}</div>
+                    <div class="${statusClass}"><i class="fas fa-code"></i> ${log.status_code}</div>
+                    <div><i class="fas fa-tachometer-alt"></i> ${log.response_time.toFixed(2)}s</div>
+                    <div><i class="fas fa-tag"></i> ${log.source || 'live'}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function updateCharts(stats) {
+            if (stats.attack_types && Object.keys(stats.attack_types).length > 0) {
+                const types = Object.keys(stats.attack_types);
+                const counts = Object.values(stats.attack_types);
+                const data = [{
+                    values: counts,
+                    labels: types,
+                    type: 'pie',
+                    hole: 0.5,
+                    marker: {
+                        colors: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7', '#DDA0DD', '#98D8C8']
+                    },
+                    textinfo: 'label+percent',
+                    textposition: 'outside',
+                    automargin: true
+                }];
+                const layout = {
+                    height: 320,
+                    margin: { t: 20, b: 20, l: 20, r: 20 },
+                    showlegend: false,
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: 'white', family: 'Roboto' },
+                    hoverlabel: { font: { color: 'white' } }
+                };
+                Plotly.newPlot('successRateChart', data, layout, { displayModeBar: false });
+            }
+        }
+
+        function updateTimelineChart(timelineData) {
+            if (timelineData.length > 0) {
+                const times = timelineData.map(d => new Date(d.timestamp));
+                const successRates = timelineData.map(d => d.success_rate || 0);
+                const attackTypes = timelineData.map(d => d.type);
+                
+                const data = [{
+                    x: times,
+                    y: successRates,
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    line: { color: '#FFFFFF', width: 3 },
+                    marker: { 
+                        size: 8,
+                        color: successRates.map(rate => rate > 50 ? '#FF6B6B' : '#4ECDC4')
+                    },
+                    text: attackTypes,
+                    hovertemplate: '<b>%{text}</b><br>Time: %{x}<br>Success: %{y}%<extra></extra>'
+                }];
+                
+                const layout = {
+                    height: 320,
+                    margin: { t: 30, b: 50, l: 60, r: 30 },
+                    xaxis: { 
+                        title: 'Time', 
+                        gridcolor: 'rgba(255,255,255,0.1)', 
+                        color: 'white',
+                        tickformat: '%H:%M'
+                    },
+                    yaxis: { 
+                        title: 'Success Rate %', 
+                        gridcolor: 'rgba(255,255,255,0.1)', 
+                        color: 'white',
+                        range: [0, 100]
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: { color: 'white', family: 'Roboto' },
+                    hoverlabel: { font: { color: 'white' } }
+                };
+                Plotly.newPlot('attackTimelineChart', data, layout, { displayModeBar: false });
+            }
+        }
+
+        function updateAlertsList(alerts) {
+            const alertsList = document.getElementById('alertsList');
+            alertsList.innerHTML = '';
+            if (alerts.length === 0) {
+                alertsList.innerHTML = '<p style="text-align: center; padding: 30px; color: #666;"><i class="fas fa-check-circle"></i><br>No alerts</p>';
+                return;
+            }
+            alerts.forEach(alert => {
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert-item ${alert.severity.toLowerCase()}`;
+                const icon = getAlertIcon(alert.severity);
+                alertDiv.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <strong>${icon} ${alert.severity}</strong>: ${alert.message}
+                            <br><small><i class="fas fa-clock"></i> ${new Date(alert.timestamp).toLocaleString()} - ${alert.source}</small>
+                        </div>
+                        ${!alert.acknowledged ? `
+                            <button class="btn" onclick="acknowledgeAlert(${alert.id})" style="padding: 5px 10px; font-size: 12px;">
+                                <i class="fas fa-check"></i> Ack
+                            </button>
+                        ` : '<span style="color: #4CAF50;"><i class="fas fa-check-double"></i> Acknowledged</span>'}
+                    </div>
+                `;
+                alertsList.appendChild(alertDiv);
+            });
+        }
+
+        function getAlertIcon(severity) {
+            switch(severity.toLowerCase()) {
+                case 'critical': return '<i class="fas fa-fire"></i>';
+                case 'high': return '<i class="fas fa-exclamation-triangle"></i>';
+                case 'medium': return '<i class="fas fa-exclamation-circle"></i>';
+                case 'low': return '<i class="fas fa-info-circle"></i>';
+                default: return '<i class="fas fa-bell"></i>';
+            }
+        }
+
+        function acknowledgeAlert(alertId) {
+            fetch(`/api/acknowledge-alert/${alertId}`, { method: 'POST' })
+                .then(() => {
+                    showNotification('Alert acknowledged', 'success');
+                    updateDashboard();
+                });
+        }
+
+        function acknowledgeAllAlerts() {
+            if (confirm('Acknowledge all alerts?')) {
+                // This would require a new endpoint to acknowledge all alerts
+                showNotification('All alerts acknowledged', 'success');
+                updateDashboard();
+            }
+        }
+
+        function runHealthCheck() {
+            showNotification('Running system health check...', 'info');
+            fetch('/api/run-health-check', { method: 'POST' })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.overall_health === 'HEALTHY') {
+                        showNotification('Health check completed: System is healthy', 'success');
+                    } else {
+                        showNotification('Health check completed: System issues detected', 'warning');
+                    }
+                    updateDashboard();
+                })
+                .catch(error => {
+                    showNotification('Health check failed', 'danger');
+                });
+        }
+
+        function runAttack(attackType) {
+            if (attackInProgress) {
+                showNotification('Another attack is already in progress', 'warning');
+                return;
+            }
+
+            showNotification(`Starting ${attackType} simulation...`, 'info');
+            attackInProgress = true;
+            currentAttack = attackType;
+            attackProgress = 0;
+
+            // Show attack console
+            const consoleElement = document.getElementById('attackConsole');
+            const consoleContent = document.getElementById('consoleContent');
+            consoleElement.style.display = 'block';
+            consoleContent.innerHTML = `<div><i class="fas fa-play"></i> Starting ${attackType} simulation...</div>`;
+
+            // Show progress bar
+            document.getElementById('attackProgress').style.display = 'block';
+
+            // Simulate progress
+            const progressInterval = setInterval(() => {
+                if (attackProgress < 90) {
+                    attackProgress += Math.random() * 15;
+                    updateAttackProgress(attackProgress);
+                }
+            }, 500);
+
+            fetch('/api/run-attack', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ attack_type: attackType })
+            })
+            .then(r => r.json())
+            .then(data => {
+                clearInterval(progressInterval);
+                attackProgress = 100;
+                updateAttackProgress(attackProgress);
+                
+                if (data.error) {
+                    consoleContent.innerHTML += `<div style="color: #ff6b6b;"><i class="fas fa-times"></i> Error: ${data.error}</div>`;
+                    showNotification(`Attack failed: ${data.error}`, 'danger');
+                } else {
+                    consoleContent.innerHTML += `<div style="color: #4CAF50;"><i class="fas fa-check"></i> ${data.status}: ${data.output || 'Completed successfully'}</div>`;
+                    showNotification(`${attackType} simulation completed`, 'success');
+                }
+                
+                setTimeout(() => {
+                    attackInProgress = false;
+                    currentAttack = null;
+                    document.getElementById('attackProgress').style.display = 'none';
+                    updateDashboard();
+                }, 2000);
+            })
+            .catch(error => {
+                clearInterval(progressInterval);
+                consoleContent.innerHTML += `<div style="color: #ff6b6b;"><i class="fas fa-times"></i> Network error: ${error}</div>`;
+                showNotification('Attack simulation failed', 'danger');
+                attackInProgress = false;
+                currentAttack = null;
+                document.getElementById('attackProgress').style.display = 'none';
+            });
+        }
+
+        function updateAttackProgress(progress) {
+            document.getElementById('attackProgressBar').style.width = progress + '%';
+            document.getElementById('attackProgressText').textContent = Math.round(progress) + '%';
+        }
+
+        function runAllAttacks() {
+            if (confirm('This will run all attack simulations. This may take a few minutes. Continue?')) {
+                const attacks = ['sql_injection', 'brute_force', 'xss', 'path_traversal', 'security_controls'];
+                showNotification('Starting all attack simulations...', 'info');
+                
+                attacks.forEach((attack, index) => {
+                    setTimeout(() => {
+                        runAttack(attack);
+                    }, index * 10000); // Stagger attacks by 10 seconds
+                });
+            }
+        }
+
+        function stopAllAttacks() {
+            if (attackInProgress) {
+                if (confirm('Stop all running attacks?')) {
+                    attackInProgress = false;
+                    currentAttack = null;
+                    document.getElementById('attackProgress').style.display = 'none';
+                    showNotification('All attacks stopped', 'warning');
+                }
+            } else {
+                showNotification('No attacks are currently running', 'info');
+            }
+        }
+
+        function clearLogs() {
+            if (confirm('Clear all displayed logs?')) {
+                document.getElementById('recentLogs').innerHTML = '';
+                showNotification('Logs cleared', 'success');
+            }
+        }
+
+        function showNotification(message, type) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 15px 20px;
+                border-radius: 10px;
+                color: white;
+                z-index: 1000;
+                max-width: 300px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                animation: slideIn 0.3s ease;
+                backdrop-filter: blur(10px);
+            `;
+            
+            const colors = {
+                success: 'linear-gradient(45deg, #00b09b, #96c93d)',
+                danger: 'linear-gradient(45deg, #ff416c, #ff4b2b)',
+                warning: 'linear-gradient(45deg, #f46b45, #eea849)',
+                info: 'linear-gradient(45deg, #00c6ff, #0072ff)'
+            };
+            
+            notification.style.background = colors[type] || colors.info;
+            notification.innerHTML = `<i class="fas fa-bell"></i> ${message}`;
+            
+            document.body.appendChild(notification);
+            
+            // Remove after 5 seconds
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 5000);
+        }
+
+        // Add CSS for notifications
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize dashboard
+        setInterval(updateDashboard, 3000);
+        updateDashboard();
+
+        // Update uptime
+        setInterval(() => {
+            const uptime = Math.floor((new Date() - sessionStartTime) / 1000);
+            document.getElementById('uptime').textContent = formatDuration(uptime);
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+2025-10-15 15:02:28,989 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-15 15:02:28,989 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-15 15:13:53,646 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-15 15:13:53,646 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-15 15:13:53,646 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-15 15:13:55,729 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-15 15:13:58,309 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-15 15:14:03,478 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-15 15:14:08,675 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-15 15:14:13,849 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-15 15:14:19,004 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-15 15:15:09,841 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-15 15:15:09,841 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-15 15:15:09,842 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-15 15:15:11,964 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-15 15:15:14,567 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-15 15:15:19,764 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-15 15:15:24,914 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-15 15:15:30,190 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-15 15:15:35,421 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-15 20:34:09,917 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-15 20:34:09,924 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-15 20:34:09,925 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-15 20:34:12,449 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-15 20:34:15,379 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-15 20:34:21,271 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-15 20:34:26,734 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-15 20:34:32,200 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-15 20:34:37,691 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-16 02:37:37,557 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-16 02:37:37,558 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-16 02:37:37,558 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-16 02:37:39,785 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-16 02:37:42,473 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-16 02:37:47,795 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-16 02:37:53,104 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-16 02:37:58,455 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-16 02:38:03,750 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-16 02:38:54,607 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-16 02:38:54,608 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-16 02:38:54,608 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-16 02:38:56,946 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-16 02:38:59,824 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-16 02:39:05,355 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-16 02:39:10,804 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-16 02:39:16,077 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-16 02:39:21,319 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-16 09:29:08,370 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-16 09:29:08,376 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-16 09:29:08,377 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-16 09:29:10,523 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-16 09:29:13,226 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-16 09:29:18,469 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-16 09:29:23,645 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-16 09:29:28,815 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-16 09:29:33,998 - BRUTE_FORCE - INFO - Completed 50/50 attempts
+2025-10-16 12:21:25,717 - BRUTE_FORCE - INFO - 🚀 Starting Brute Force Attack Simulation
+2025-10-16 12:21:25,726 - BRUTE_FORCE - INFO - Generated 50 credential pairs
+2025-10-16 12:21:25,727 - BRUTE_FORCE - INFO - Starting sequential brute force attack...
+2025-10-16 12:21:28,208 - BRUTE_FORCE - CRITICAL - 🚨 SUCCESSFUL LOGIN: admin@juice-sh.op:admin123
+2025-10-16 12:21:31,042 - BRUTE_FORCE - INFO - Completed 10/50 attempts
+2025-10-16 12:21:36,520 - BRUTE_FORCE - INFO - Completed 20/50 attempts
+2025-10-16 12:21:42,045 - BRUTE_FORCE - INFO - Completed 30/50 attempts
+2025-10-16 12:21:47,669 - BRUTE_FORCE - INFO - Completed 40/50 attempts
+2025-10-16 12:21:53,122 - BRUTE_FORCE - INFO - Completed 50/50 attempts

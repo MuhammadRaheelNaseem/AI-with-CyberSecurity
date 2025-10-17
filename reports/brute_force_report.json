@@ -1,0 +1,489 @@
+{
+  "attack_type": "Brute Force",
+  "timestamp": "2025-10-16T02:41:31.290556",
+  "target": "http://localhost:3000",
+  "summary": {
+    "total_attempts": 50,
+    "successful_logins": 1,
+    "blocked_attempts": 0,
+    "success_rate": 2.0,
+    "compromised_accounts": [
+      [
+        "admin@juice-sh.op",
+        "admin123"
+      ]
+    ]
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-10-16T02:41:04.795169",
+      "username": "admin@juice-sh.op",
+      "password": "admin",
+      "status_code": 401,
+      "response_time": 0.028279542922973633,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:05.328710",
+      "username": "admin@juice-sh.op",
+      "password": "password",
+      "status_code": 401,
+      "response_time": 0.032999515533447266,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:05.869481",
+      "username": "admin@juice-sh.op",
+      "password": "123456",
+      "status_code": 401,
+      "response_time": 0.039864540100097656,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:06.401250",
+      "username": "admin@juice-sh.op",
+      "password": "password123",
+      "status_code": 401,
+      "response_time": 0.031121492385864258,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:06.950513",
+      "username": "admin@juice-sh.op",
+      "password": "admin123",
+      "status_code": 200,
+      "response_time": 0.04880881309509277,
+      "success": true,
+      "blocked": false,
+      "user_data": {
+        "authentication": {
+          "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MSwidXNlcm5hbWUiOiIiLCJlbWFpbCI6ImFkbWluQGp1aWNlLXNoLm9wIiwicGFzc3dvcmQiOiIwMTkyMDIzYTdiYmQ3MzI1MDUxNmYwNjlkZjE4YjUwMCIsInJvbGUiOiJhZG1pbiIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIiLCJwcm9maWxlSW1hZ2UiOiJhc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHRBZG1pbi5wbmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTc2MDU2NDQ2N30.gxKAm9DtlAevT9gHJrls-oVHU_uNW4lVu3cuxdI8hAEroRUjSBZQ4ncvdc9WtTShYWyDvSLObcl_0rWGtaNp83CrISP7z3FL1lGwsDQRgzzK-IERQDWSx0zOUKGtgr1CDst2kN7JWcn7S9_prTjMlQ38gBBqGA5mkFc2IAVJhEk",
+          "bid": 1,
+          "umail": "admin@juice-sh.op"
+        }
+      }
+    },
+    {
+      "timestamp": "2025-10-16T02:41:07.483233",
+      "username": "admin@juice-sh.op",
+      "password": "test",
+      "status_code": 401,
+      "response_time": 0.03140616416931152,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:08.006934",
+      "username": "admin@juice-sh.op",
+      "password": "12345678",
+      "status_code": 401,
+      "response_time": 0.02309107780456543,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:08.537033",
+      "username": "admin@juice-sh.op",
+      "password": "qwerty",
+      "status_code": 401,
+      "response_time": 0.029428482055664062,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:09.062179",
+      "username": "admin@juice-sh.op",
+      "password": "123456789",
+      "status_code": 401,
+      "response_time": 0.024537086486816406,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:09.588652",
+      "username": "admin@juice-sh.op",
+      "password": "12345",
+      "status_code": 401,
+      "response_time": 0.02582550048828125,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:10.130364",
+      "username": "admin@juice-sh.op",
+      "password": "1234",
+      "status_code": 401,
+      "response_time": 0.03454232215881348,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:10.665951",
+      "username": "admin@juice-sh.op",
+      "password": "111111",
+      "status_code": 401,
+      "response_time": 0.03498959541320801,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:11.239250",
+      "username": "admin",
+      "password": "admin",
+      "status_code": 401,
+      "response_time": 0.07274007797241211,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:11.837746",
+      "username": "admin",
+      "password": "password",
+      "status_code": 401,
+      "response_time": 0.09753155708312988,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:12.359690",
+      "username": "admin",
+      "password": "123456",
+      "status_code": 401,
+      "response_time": 0.021728992462158203,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:12.883995",
+      "username": "admin",
+      "password": "password123",
+      "status_code": 401,
+      "response_time": 0.023998737335205078,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:13.412420",
+      "username": "admin",
+      "password": "admin123",
+      "status_code": 401,
+      "response_time": 0.027901649475097656,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:13.933348",
+      "username": "admin",
+      "password": "test",
+      "status_code": 401,
+      "response_time": 0.02071666717529297,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:14.446405",
+      "username": "admin",
+      "password": "12345678",
+      "status_code": 401,
+      "response_time": 0.012729406356811523,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:14.967759",
+      "username": "admin",
+      "password": "qwerty",
+      "status_code": 401,
+      "response_time": 0.021111011505126953,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:15.488350",
+      "username": "admin",
+      "password": "123456789",
+      "status_code": 401,
+      "response_time": 0.018790006637573242,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:16.004566",
+      "username": "admin",
+      "password": "12345",
+      "status_code": 401,
+      "response_time": 0.015857696533203125,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:16.532388",
+      "username": "admin",
+      "password": "1234",
+      "status_code": 401,
+      "response_time": 0.027535438537597656,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:17.062788",
+      "username": "admin",
+      "password": "111111",
+      "status_code": 401,
+      "response_time": 0.02975177764892578,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:17.580191",
+      "username": "administrator",
+      "password": "admin",
+      "status_code": 401,
+      "response_time": 0.01671743392944336,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:18.130533",
+      "username": "administrator",
+      "password": "password",
+      "status_code": 401,
+      "response_time": 0.049625396728515625,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:18.645484",
+      "username": "administrator",
+      "password": "123456",
+      "status_code": 401,
+      "response_time": 0.014533519744873047,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:19.159633",
+      "username": "administrator",
+      "password": "password123",
+      "status_code": 401,
+      "response_time": 0.01383209228515625,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:19.679305",
+      "username": "administrator",
+      "password": "admin123",
+      "status_code": 401,
+      "response_time": 0.01924300193786621,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:20.208564",
+      "username": "administrator",
+      "password": "test",
+      "status_code": 401,
+      "response_time": 0.029034852981567383,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:20.730924",
+      "username": "administrator",
+      "password": "12345678",
+      "status_code": 401,
+      "response_time": 0.021442890167236328,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:21.253086",
+      "username": "administrator",
+      "password": "qwerty",
+      "status_code": 401,
+      "response_time": 0.021441936492919922,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:21.771072",
+      "username": "administrator",
+      "password": "123456789",
+      "status_code": 401,
+      "response_time": 0.0175015926361084,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:22.292628",
+      "username": "administrator",
+      "password": "12345",
+      "status_code": 401,
+      "response_time": 0.021193504333496094,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:22.817986",
+      "username": "administrator",
+      "password": "1234",
+      "status_code": 401,
+      "response_time": 0.024866104125976562,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:23.340387",
+      "username": "administrator",
+      "password": "111111",
+      "status_code": 401,
+      "response_time": 0.022005081176757812,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:23.856660",
+      "username": "test",
+      "password": "admin",
+      "status_code": 401,
+      "response_time": 0.015760421752929688,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:24.379245",
+      "username": "test",
+      "password": "password",
+      "status_code": 401,
+      "response_time": 0.021949052810668945,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:24.900452",
+      "username": "test",
+      "password": "123456",
+      "status_code": 401,
+      "response_time": 0.020562410354614258,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:25.436563",
+      "username": "test",
+      "password": "password123",
+      "status_code": 401,
+      "response_time": 0.03567814826965332,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:25.952123",
+      "username": "test",
+      "password": "admin123",
+      "status_code": 401,
+      "response_time": 0.01487112045288086,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:26.469090",
+      "username": "test",
+      "password": "test",
+      "status_code": 401,
+      "response_time": 0.016734838485717773,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:26.983806",
+      "username": "test",
+      "password": "12345678",
+      "status_code": 401,
+      "response_time": 0.014429807662963867,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:27.510494",
+      "username": "test",
+      "password": "qwerty",
+      "status_code": 401,
+      "response_time": 0.026334524154663086,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:28.044179",
+      "username": "test",
+      "password": "123456789",
+      "status_code": 401,
+      "response_time": 0.03317904472351074,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:28.558737",
+      "username": "test",
+      "password": "12345",
+      "status_code": 401,
+      "response_time": 0.014081954956054688,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:29.113691",
+      "username": "test",
+      "password": "1234",
+      "status_code": 401,
+      "response_time": 0.05447888374328613,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:29.717439",
+      "username": "test",
+      "password": "111111",
+      "status_code": 401,
+      "response_time": 0.10320138931274414,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:30.251869",
+      "username": "user",
+      "password": "admin",
+      "status_code": 401,
+      "response_time": 0.03395700454711914,
+      "success": false,
+      "blocked": false
+    },
+    {
+      "timestamp": "2025-10-16T02:41:30.789515",
+      "username": "user",
+      "password": "password",
+      "status_code": 401,
+      "response_time": 0.03736472129821777,
+      "success": false,
+      "blocked": false
+    }
+  ],
+  "security_implications": [
+    "Weak passwords can be easily compromised",
+    "Lack of account lockout mechanisms",
+    "No rate limiting on authentication endpoints",
+    "No multi-factor authentication"
+  ],
+  "recommendations": [
+    "Implement strong password policies",
+    "Enforce account lockout after failed attempts",
+    "Deploy rate limiting on login endpoints",
+    "Use multi-factor authentication",
+    "Monitor for brute force patterns"
+  ]
+}

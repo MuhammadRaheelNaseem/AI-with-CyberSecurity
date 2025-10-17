@@ -1,0 +1,39 @@
+2025-10-15 15:58:32,187 - SECURITY - INFO - 🛡️ Starting Comprehensive Security Controls Testing
+2025-10-15 15:58:32,188 - SECURITY - INFO - Phase 1: Authentication Controls
+2025-10-15 15:58:32,189 - SECURITY - INFO -    Testing Password Policy
+2025-10-15 15:58:33,405 - SECURITY - WARNING - ❌ Weak password accepted – Password policy not enforced
+2025-10-15 15:58:33,408 - SECURITY - INFO -    Testing Account Lockout Mechanism
+2025-10-15 15:58:37,268 - SECURITY - WARNING - ❌ No lockout or rate limiting detected
+2025-10-15 15:58:37,270 - SECURITY - INFO -    Testing Session Management
+2025-10-15 15:58:37,747 - SECURITY - INFO - ✅ Session management working
+2025-10-15 15:58:37,749 - SECURITY - INFO - Phase 2: Input Validation
+2025-10-15 15:58:38,358 - SECURITY - WARNING - ⚠️ Partial input validation – some payloads reflected
+2025-10-15 15:58:38,360 - SECURITY - INFO - Phase 3: Security Headers
+2025-10-15 15:58:38,406 - SECURITY - WARNING - ❌ Missing security headers: CSP, HSTS
+2025-10-15 15:58:38,408 - SECURITY - INFO - 📊 Generating Security Assessment Report...
+2025-10-16 02:22:33,968 - SECURITY - INFO - 🛡️ Starting Comprehensive Security Controls Testing
+2025-10-16 02:22:33,975 - SECURITY - INFO - Phase 1: Authentication Controls
+2025-10-16 02:22:33,976 - SECURITY - INFO -    Testing Password Policy
+2025-10-16 02:22:34,290 - SECURITY - WARNING - ❌ Weak password accepted – Password policy not enforced
+2025-10-16 02:22:34,303 - SECURITY - INFO -    Testing Account Lockout Mechanism
+2025-10-16 02:22:38,106 - SECURITY - WARNING - ❌ No lockout or rate limiting detected
+2025-10-16 02:22:38,107 - SECURITY - INFO -    Testing Session Management
+2025-10-16 02:22:38,733 - SECURITY - INFO - ✅ Session management working
+2025-10-16 02:22:38,735 - SECURITY - INFO - Phase 2: Input Validation
+2025-10-16 02:22:39,073 - SECURITY - WARNING - ⚠️ Partial input validation – some payloads reflected
+2025-10-16 02:22:39,075 - SECURITY - INFO - Phase 3: Security Headers
+2025-10-16 02:22:39,098 - SECURITY - WARNING - ❌ Missing security headers: CSP, HSTS
+2025-10-16 02:22:39,099 - SECURITY - INFO - 📊 Generating Security Assessment Report...
+2025-10-16 02:39:09,893 - SECURITY - INFO - 🛡️ Starting Comprehensive Security Controls Testing
+2025-10-16 02:39:09,894 - SECURITY - INFO - Phase 1: Authentication Controls
+2025-10-16 02:39:09,894 - SECURITY - INFO -    Testing Password Policy
+2025-10-16 02:39:09,979 - SECURITY - INFO - ✅ Password policy enforced
+2025-10-16 02:39:09,979 - SECURITY - INFO -    Testing Account Lockout Mechanism
+2025-10-16 02:39:13,227 - SECURITY - WARNING - ❌ No lockout or rate limiting detected
+2025-10-16 02:39:13,227 - SECURITY - INFO -    Testing Session Management
+2025-10-16 02:39:13,315 - SECURITY - INFO - ✅ Session management working
+2025-10-16 02:39:13,316 - SECURITY - INFO - Phase 2: Input Validation
+2025-10-16 02:39:13,599 - SECURITY - WARNING - ⚠️ Partial input validation – some payloads reflected
+2025-10-16 02:39:13,600 - SECURITY - INFO - Phase 3: Security Headers
+2025-10-16 02:39:13,613 - SECURITY - WARNING - ❌ Missing security headers: CSP, HSTS
+2025-10-16 02:39:13,613 - SECURITY - INFO - 📊 Generating Security Assessment Report...

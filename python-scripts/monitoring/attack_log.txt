@@ -1,0 +1,570 @@
+2025-10-16 09:15:10,135 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:15:10,135 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:15:10,138 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:15:10,139 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:15:10,139 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:15:10,146 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:15:10,147 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:15:10,147 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:15:10,149 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:15:11,225 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:15:11,232 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:15:11,233 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:15:11,242 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:15:11,243 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:15:11,243 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:15:11,243 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:15:11,289 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.103:5000
+2025-10-16 09:15:11,290 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 09:15:11,291 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:15:12,032 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:15:12,032 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:15:12,034 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:15:12,034 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:15:12,035 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:15:12,037 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:15:12,038 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:15:12,040 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:15:12,041 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:15:13,059 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:15:13,069 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:15:13,071 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:15:13,079 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:15:13,080 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:15:13,080 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:15:13,080 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:15:13,134 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:15:13,145 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:15:16,986 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:16] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:16,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:16,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:16] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:17,003 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:17,010 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:17,014 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:17,018 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:17,027 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:17,032 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:17] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:20,230 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:20,234 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:20,246 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:20,260 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:20,270 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:20,275 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:20,287 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:20,294 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:20,306 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:20] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:21,485 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:21] "GET / HTTP/1.1" 200 -
+2025-10-16 09:15:22,028 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:22,032 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:22,038 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:22,067 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:22,102 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:22,121 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:22,126 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:22,142 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:22,151 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:22] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:25,055 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:25,058 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:25,065 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:25,089 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:25,104 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:25,117 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:25,144 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:25,174 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:25,189 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:25] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:27,250 - __main__ - INFO - 🎯 API: Running attack sql_injection
+2025-10-16 09:15:27,252 - __main__ - INFO - 🎯 Running attack: sql_injection
+2025-10-16 09:15:27,253 - __main__ - INFO - 📜 Script path: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\attacks\sql_injection.py
+2025-10-16 09:15:27,254 - __main__ - INFO - 📁 Running from directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:15:28,040 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:28,045 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:28,058 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:28,102 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:28,114 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:28,131 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:28,138 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:28,157 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:28,175 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:28] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:31,963 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:31,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:31,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:31,979 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:31,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:31,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:31,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:31,999 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:31] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:32,003 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:32] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:34,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:34,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:34,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:34,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:34,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:34,989 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:34,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:34] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:35,001 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:35] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:35,015 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:35] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:35,316 - __main__ - INFO - 📋 Attack sql_injection completed with return code: 1
+2025-10-16 09:15:35,316 - __main__ - INFO - 📤 stdout: 2025-10-16 09:15:27 - SQLI - INFO - Starting Comprehensive SQL Injection Attack
+2025-10-16 09:15:27 - SQLI - INFO - Testing SQL Injection - Login Bypass
+2025-10-16 09:15:27 - SQLI - INFO - Testing pay...
+2025-10-16 09:15:35,317 - __main__ - WARNING - 📥 stderr: 2025-10-16 09:15:27,884 - SQLI - INFO - \U0001f680 Starting Comprehensive SQL Injection Attack
+2025-10-16 09:15:27,884 - SQLI - INFO - \U0001f513 Testing SQL Injection - Login Bypass
+2025-10-16 09:15:...
+2025-10-16 09:15:35,317 - __main__ - INFO - 🚨 Alert: WARNING - sql_injection simulation failed
+2025-10-16 09:15:35,318 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:35] "POST /api/run-attack HTTP/1.1" 200 -
+2025-10-16 09:15:37,959 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:37,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:37,968 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:37,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:37,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:37,983 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:37,994 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:37,998 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:37] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:38,009 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:38,011 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:38,013 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:38,017 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:38,028 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:38,031 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:38,039 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:38,043 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:38,046 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:38,058 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:38] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:40,970 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:40,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:40,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:40,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:40,984 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:40,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:40,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:40,994 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:40] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:41,002 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:41] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:43,064 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:43,081 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:43,088 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:43,129 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:43,144 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:43,162 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:43,182 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:43,188 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:43,226 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:43] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:46,028 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:46,029 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:46,032 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:46,037 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:46,043 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:46,044 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:46,049 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:46,053 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:46,057 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:46] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:49,971 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:49,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:49,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:49,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:49,990 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:49,992 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:49,996 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:49,999 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:49] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:50,004 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:50] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:52,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:52,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:52,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:52,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:52,984 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:52,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:52,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:52,995 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:52] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:53,000 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:53] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:55,956 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:55,957 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:55,959 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:55,964 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:55,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:55,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:55,975 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:55,979 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:55,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:55] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:15:58,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:15:58,963 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:15:58,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:15:58,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:15:58,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:15:58,983 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:15:58,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:15:58,989 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:15:58,997 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:15:58] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:01,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:01,963 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:01,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:01,968 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:01,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:01,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:01,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:01,983 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:01,990 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:01] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:04,958 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:04,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:04,964 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:04,968 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:04,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:04,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:04,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:04,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:04,986 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:04] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:07,970 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:07,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:07,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:07,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:07,990 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:07,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:07,995 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:07,998 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:07] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:08,004 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:08] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:10,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:10,970 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:10,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:10,975 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:10,984 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:10,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:10,989 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:10,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:10,996 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:10] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:13,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:13,970 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:13,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:13,979 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:13,983 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:13,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:13,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:13,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:13,996 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:13] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:16,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:16,961 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:16,963 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:16,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:16,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:16,975 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:16,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:16,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:16,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:16] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:19,958 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:19,958 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:19,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:19,966 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:19,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:19,977 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:19,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:19,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:19,992 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:19] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:22,961 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:22,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:22,964 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:22,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:22,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:22,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:22,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:22,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:22,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:22] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:25,955 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:25] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:25,957 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:25] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:25,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:25] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:26,017 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:26,020 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:26,024 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:26,027 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:26,029 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:26,035 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:26] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:28,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:28,975 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:28,977 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:28,984 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:28,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:28,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:28,999 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:28] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:29,001 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:29] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:29,009 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:29] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:31,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:31,966 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:31,968 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:31,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:31,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:31,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:31,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:31] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:32,001 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:32] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:32,013 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:32] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:34,971 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:34,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:34,975 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:34,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:34,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:34,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:34,999 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:34] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:35,006 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:35] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:35,010 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:35] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:37,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:37,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:37,977 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:37,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:37,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:37,999 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:37] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:38,004 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:38] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:38,007 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:38] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:38,012 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:38] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:40,970 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:40,971 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:40,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:40,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:40,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:40,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:40,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:40,990 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:40,996 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:40] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:43,958 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:43,959 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:43,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:43,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:43,976 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:43,977 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:43,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:43,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:43,992 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:43] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:46,966 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:46,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:46,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:46,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:46,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:46,983 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:46,986 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:46,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:46,993 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:46] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:16:49,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:16:49,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:16:49,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:16:49,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:16:49,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:16:49,982 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:16:49,986 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:16:49,987 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:16:49,996 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:16:49] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:17:17,026 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:17:17,027 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:17:17,030 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:17:17,034 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:17:17,045 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:17:17,047 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:17:17,059 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:17:17,066 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:17:17,071 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:17:17] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:18:16,960 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:18:16,962 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:18:16,964 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:18:16,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:18:16,974 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:18:16,978 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:18:16,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:18:16,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:18:16,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:18:16] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:18:46,249 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:18:46,517 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:18:47,365 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:18:47,365 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:18:47,366 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:18:47,366 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:18:47,367 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:18:47,367 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:18:47,367 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:18:47,367 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:18:47,368 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:18:48,581 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:18:48,588 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:18:48,589 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:18:48,596 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:18:48,596 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:18:48,596 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:18:48,597 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:18:48,617 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:18:48,635 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:18:51,051 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:18:51,277 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:18:52,459 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:18:52,460 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:18:52,463 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:18:52,463 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:18:52,463 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:18:52,464 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:18:52,464 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:18:52,464 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:18:52,464 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:18:53,652 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:18:53,660 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:18:53,661 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:18:53,668 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:18:53,669 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:18:53,669 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:18:53,669 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:18:53,697 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:18:53,704 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:19:04,571 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:19:05,020 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:19:06,030 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:19:06,030 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:19:06,032 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:19:06,032 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:19:06,032 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:19:06,033 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:06,033 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:06,033 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:19:06,034 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:19:07,644 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:19:07,651 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:19:07,652 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:19:07,662 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:19:07,663 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:19:07,663 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:19:07,664 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:19:07,699 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:19:07,710 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:19:16,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:19:16,971 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:19:16,972 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:19:16,977 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:19:16,984 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:19:16,985 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:19:16,988 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:19:16,991 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:19:16,998 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:19:16] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:19:48,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:19:48,473 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:19:49,612 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:19:49,612 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:19:49,614 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:19:49,614 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:19:49,615 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:19:49,615 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:49,615 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:49,615 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:19:49,616 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:19:51,068 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:19:51,076 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:19:51,077 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:19:51,086 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:19:51,087 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:19:51,087 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:19:51,087 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:19:51,113 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:19:51,120 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:19:56,672 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:19:57,018 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:19:58,166 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:19:58,166 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:19:58,173 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:19:58,174 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:19:58,174 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:19:58,174 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:58,175 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:19:58,175 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:19:58,176 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:19:59,422 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:19:59,428 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:19:59,429 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:19:59,436 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:19:59,436 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:19:59,437 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:19:59,437 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:19:59,458 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:19:59,464 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:20:02,771 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:20:03,077 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:20:04,209 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:20:04,209 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:20:04,212 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:20:04,213 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:20:04,214 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:20:04,215 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:04,216 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:04,217 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:20:04,218 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:20:05,651 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:20:05,657 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:20:05,658 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:20:05,667 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:20:05,668 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:20:05,668 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:20:05,668 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:20:05,691 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:20:05,698 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:20:06,863 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:20:07,094 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:20:07,836 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:20:07,836 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:20:07,837 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:20:07,838 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:20:07,838 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:20:07,838 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:07,838 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:07,839 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:20:07,839 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:20:08,808 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:20:08,814 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:20:08,815 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:20:08,821 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:20:08,822 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:20:08,822 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:20:08,823 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:20:08,846 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:20:08,853 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:20:16,965 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/session-info HTTP/1.1" 200 -
+2025-10-16 09:20:16,967 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/ai-insights HTTP/1.1" 200 -
+2025-10-16 09:20:16,969 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/attack-stats HTTP/1.1" 200 -
+2025-10-16 09:20:16,973 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/alerts HTTP/1.1" 200 -
+2025-10-16 09:20:16,980 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/system-health HTTP/1.1" 200 -
+2025-10-16 09:20:16,981 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/attack-timeline HTTP/1.1" 200 -
+2025-10-16 09:20:16,986 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/recent-logs?limit=15 HTTP/1.1" 200 -
+2025-10-16 09:20:16,989 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/model-status HTTP/1.1" 200 -
+2025-10-16 09:20:16,992 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:20:16] "GET /api/file-structure HTTP/1.1" 200 -
+2025-10-16 09:20:27,004 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:20:27,223 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:20:27,975 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:20:27,975 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:20:27,977 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:20:27,977 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:20:27,977 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:20:27,977 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:27,978 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:27,978 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:20:27,978 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:20:29,058 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:20:29,065 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:20:29,067 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:20:29,075 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:20:29,076 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:20:29,076 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:20:29,076 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:20:29,098 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:20:29,104 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:20:30,249 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:20:30,553 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:20:31,307 - __main__ - INFO - 🚀 SQL Injection attack started!
+2025-10-16 09:20:31,308 - __main__ - WARNING - ⚠️ Possible XSS vulnerability detected!
+2025-10-16 09:20:31,309 - __main__ - INFO - 📁 Base directory: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring
+2025-10-16 09:20:31,309 - __main__ - INFO - 📁 Project root: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab
+2025-10-16 09:20:31,310 - __main__ - INFO - 📊 Loading reports from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\reports
+2025-10-16 09:20:31,310 - __main__ - INFO - 📝 Loading logs from: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:31,310 - __main__ - WARNING - ⚠️ Logs directory not found: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\logs
+2025-10-16 09:20:31,311 - __main__ - INFO - 🔍 Looking for models in: C:\Users\mrahe\OneDrive\Desktop\versions\version1\SecurityTrainingLab\python-scripts\monitoring\models
+2025-10-16 09:20:31,311 - __main__ - INFO - 📊 Available model files: ['anomaly_model.pkl', 'master_threat_model.pkl', 'scaler.pkl', 'text_model.pkl', 'vectorizer.pkl']
+2025-10-16 09:20:32,485 - __main__ - INFO - ✅ ai_model loaded successfully from master_threat_model.pkl
+2025-10-16 09:20:32,491 - __main__ - INFO - ✅ text_model loaded successfully from text_model.pkl
+2025-10-16 09:20:32,492 - __main__ - INFO - ✅ vectorizer loaded successfully from vectorizer.pkl
+2025-10-16 09:20:32,499 - __main__ - INFO - ✅ anomaly_model loaded successfully from anomaly_model.pkl
+2025-10-16 09:20:32,500 - __main__ - INFO - ✅ scaler loaded successfully from scaler.pkl
+2025-10-16 09:20:32,500 - __main__ - INFO - 🎉 Successfully loaded 5/5 models
+2025-10-16 09:20:32,500 - __main__ - INFO - 🚨 Alert: LOW - AI models loaded (5/5)
+2025-10-16 09:20:32,522 - werkzeug - WARNING -  * Debugger is active!
+2025-10-16 09:20:32,529 - werkzeug - INFO -  * Debugger PIN: 790-557-008
+2025-10-16 09:20:36,868 - werkzeug - INFO -  * Detected change in 'C:\\Users\\mrahe\\OneDrive\\Desktop\\versions\\version1\\SecurityTrainingLab\\python-scripts\\monitoring\\flask_monitor.py', reloading
+2025-10-16 09:20:37,112 - werkzeug - INFO -  * Restarting with stat
+2025-10-16 09:20:43,963 - werkzeug - INFO -  * Restarting with stat

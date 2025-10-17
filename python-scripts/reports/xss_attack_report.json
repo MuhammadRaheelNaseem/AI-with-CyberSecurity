@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-16T12:25:51.838165",
+  "attack_type": "XSS Attack",
+  "summary": {
+    "total_attempts": 8,
+    "successful_xss": 7,
+    "success_rate": 87.5,
+    "payloads_tested": 8
+  },
+  "details": {
+    "payload_types": [
+      "Reflected XSS",
+      "Stored XSS",
+      "DOM-based XSS"
+    ],
+    "vulnerabilities_found": [
+      "Unsanitized user input",
+      "Missing Content Security Policy",
+      "Inline JavaScript execution"
+    ],
+    "recommendations": [
+      "Implement input validation and sanitization",
+      "Use Content Security Policy (CSP)",
+      "Encode output properly",
+      "Use HTTPOnly cookies",
+      "Regular security testing"
+    ]
+  }
+}

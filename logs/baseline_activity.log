@@ -1,0 +1,82 @@
+2025-10-15 14:24:37,496 - INFO - 🚀 Starting Comprehensive Baseline Activity Simulation
+2025-10-15 14:24:37,502 - INFO - 👤 Starting session for user: tiffany25@example.com
+2025-10-15 14:24:37,503 - INFO - 👤 Starting session for user: ehart@example.net
+2025-10-15 14:24:37,504 - INFO - 👤 Starting session for user: mitchellfrench@example.org
+2025-10-15 14:24:37,859 - INFO - ✅ User registered: mitchellfrench@example.org
+2025-10-15 14:24:37,873 - INFO - ✅ User registered: tiffany25@example.com
+2025-10-15 14:24:37,881 - INFO - ✅ User registered: ehart@example.net
+2025-10-15 14:24:39,095 - INFO - ✅ User logged in: mitchellfrench@example.org
+2025-10-15 14:24:39,097 - INFO -   🎯 Browsing products
+2025-10-15 14:24:39,285 - INFO - ✅ User logged in: tiffany25@example.com
+2025-10-15 14:24:39,286 - INFO -   🎯 Browsing products
+2025-10-15 14:24:39,406 - INFO - ✅ User logged in: ehart@example.net
+2025-10-15 14:24:39,407 - INFO -   🎯 Browsing products
+2025-10-15 14:24:39,577 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-15 14:24:39,955 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:24:40,062 - INFO - 📄 Viewed details for product: OWASP Juice Shop Holographic Sticker
+2025-10-15 14:24:41,499 - INFO - 🔍 Searched for 'fruit', found 3 results
+2025-10-15 14:24:41,845 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-15 14:24:42,951 - INFO - 📂 Browsed category: /rest/products/search?q=snack
+2025-10-15 14:24:43,522 - INFO - 🔍 Searched for 'orange', found 1 results
+2025-10-15 14:24:43,690 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:24:45,727 - INFO - 🔍 Searched for 'juice', found 29 results
+2025-10-15 14:24:47,536 - INFO -   🎯 Shopping cart activities
+2025-10-15 14:24:47,847 - INFO -   🎯 Shopping cart activities
+2025-10-15 14:24:47,980 - INFO - 📋 Viewed shopping cart
+2025-10-15 14:24:48,297 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:24:48,489 - INFO - 📋 Viewed shopping cart
+2025-10-15 14:24:50,098 - INFO - 📄 Viewed details for product: OWASP Juice Shop Holographic Sticker
+2025-10-15 14:24:50,944 - INFO -   🎯 Additional browsing
+2025-10-15 14:24:51,254 - INFO - 📄 Viewed details for product: OWASP Juice Shop Sticker Single
+2025-10-15 14:24:52,207 - INFO -   🎯 Additional browsing
+2025-10-15 14:24:52,290 - INFO - 📂 Browsed category: /rest/products/search?q=vegetable
+2025-10-15 14:24:53,724 - INFO -   🎯 Shopping cart activities
+2025-10-15 14:24:54,042 - INFO - 📋 Viewed shopping cart
+2025-10-15 14:24:54,300 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:24:55,505 - INFO - 📄 Viewed details for product: Apple Pomace
+2025-10-15 14:24:55,655 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:24:57,153 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-15 14:24:57,438 - INFO -   🎯 Additional browsing
+2025-10-15 14:24:57,506 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-15 14:24:58,512 - INFO - 📄 Viewed details for product: OWASP Juice Shop Iron-Ons (16pcs)
+2025-10-15 14:24:59,077 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:00,093 - INFO - 📄 Viewed details for product: OWASP Juice Shop Holographic Sticker
+2025-10-15 14:25:01,742 - INFO - 🔍 Searched for 'apple', found 2 results
+2025-10-15 14:25:01,824 - INFO - 👤 Completed session for user: tiffany25@example.com
+2025-10-15 14:25:01,825 - INFO - 👤 Starting session for user: matthew03@example.net
+2025-10-15 14:25:01,958 - INFO - ✅ User registered: matthew03@example.net
+2025-10-15 14:25:02,164 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:03,084 - INFO - ✅ User logged in: matthew03@example.net
+2025-10-15 14:25:03,086 - INFO -   🎯 Browsing products
+2025-10-15 14:25:03,213 - INFO - 🔍 Searched for 'fresh', found 0 results
+2025-10-15 14:25:04,934 - INFO - 📄 Viewed details for product: OWASP Juice Shop-CTF Velcro Patch
+2025-10-15 14:25:05,041 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:06,577 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-15 14:25:07,176 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:08,573 - INFO - 👤 Completed session for user: ehart@example.net
+2025-10-15 14:25:08,576 - INFO - 👤 Starting session for user: btaylor@example.net
+2025-10-15 14:25:08,696 - INFO - ✅ User registered: btaylor@example.net
+2025-10-15 14:25:08,980 - INFO - 🔍 Searched for 'fruit', found 3 results
+2025-10-15 14:25:09,878 - INFO - ✅ User logged in: btaylor@example.net
+2025-10-15 14:25:09,880 - INFO -   🎯 Browsing products
+2025-10-15 14:25:09,952 - INFO - 🔍 Searched for 'apple', found 2 results
+2025-10-15 14:25:12,008 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:12,077 - INFO - 👤 Completed session for user: mitchellfrench@example.org
+2025-10-15 14:25:13,163 - INFO - 📄 Viewed details for product: OWASP Juice Shop Card (non-foil)
+2025-10-15 14:25:15,909 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:15,915 - INFO -   🎯 Shopping cart activities
+2025-10-15 14:25:16,145 - INFO - 📋 Viewed shopping cart
+2025-10-15 14:25:19,343 - INFO -   🎯 Additional browsing
+2025-10-15 14:25:19,683 - INFO - 📄 Viewed details for product: OWASP Juice Shop T-Shirt
+2025-10-15 14:25:20,407 - INFO -   🎯 Shopping cart activities
+2025-10-15 14:25:20,896 - INFO - 📋 Viewed shopping cart
+2025-10-15 14:25:22,074 - INFO - 🔍 Searched for 'fresh', found 0 results
+2025-10-15 14:25:23,966 - INFO -   🎯 Additional browsing
+2025-10-15 14:25:24,317 - INFO - 📄 Viewed details for product: OWASP Snakes and Ladders - Web Applications
+2025-10-15 14:25:24,473 - INFO - ⭐ Checked 8 product reviews
+2025-10-15 14:25:25,593 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-15 14:25:25,957 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-15 14:25:27,551 - INFO - 🔍 Searched for 'banana', found 1 results
+2025-10-15 14:25:32,544 - INFO - 👤 Completed session for user: matthew03@example.net
+2025-10-15 14:25:33,832 - INFO - 👤 Completed session for user: btaylor@example.net
+2025-10-15 14:25:33,842 - INFO - 📊 Baseline report generated: ../reports/baseline_activity_report.json

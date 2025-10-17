@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-10-16T12:37:11.029027",
+  "attack_type": "Brute Force",
+  "summary": {
+    "total_attempts": 35,
+    "successful_attempts": 3,
+    "success_rate": 8.571428571428571,
+    "common_passwords_tested": 10,
+    "common_usernames_tested": 9
+  },
+  "details": {
+    "target_url": "http://localhost:3000",
+    "techniques_used": [
+      "Sequential",
+      "Dictionary"
+    ],
+    "recommendations": [
+      "Implement account lockout policies",
+      "Use strong password requirements",
+      "Enable multi-factor authentication",
+      "Monitor failed login attempts"
+    ]
+  }
+}

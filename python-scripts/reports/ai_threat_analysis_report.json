@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-10-16T01:13:26.938415",
+  "model_performance": {
+    "training_accuracy": 1.0,
+    "testing_accuracy": 0.625,
+    "model_type": "Random Forest",
+    "features_used": "TF-IDF of character n-grams"
+  },
+  "attack_patterns_analysis": {
+    "sql_injection": {
+      "successful_payloads": [
+        "' OR '1'='1'--",
+        "' OR 1=1--"
+      ],
+      "total_attempts": 9,
+      "success_rate": 22.22222222222222
+    },
+    "xss": {
+      "successful_payloads": [],
+      "total_attempts": 8,
+      "success_rate": 0
+    }
+  },
+  "real_time_detection_demo": [
+    {
+      "input": "apple juice",
+      "malicious": false,
+      "confidence": 0.375,
+      "threat_level": "MEDIUM"
+    },
+    {
+      "input": "' OR 1=1--",
+      "malicious": true,
+      "confidence": 0.97,
+      "threat_level": "HIGH"
+    },
+    {
+      "input": "<script>alert('xss')</script>",
+      "malicious": true,
+      "confidence": 0.93,
+      "threat_level": "HIGH"
+    },
+    {
+      "input": "../../../etc/passwd",
+      "malicious": true,
+      "confidence": 1.0,
+      "threat_level": "HIGH"
+    },
+    {
+      "input": "normal search query",
+      "malicious": true,
+      "confidence": 0.68,
+      "threat_level": "MEDIUM"
+    }
+  ],
+  "ai_recommendations": [
+    "Implement ML-based input validation",
+    "Use behavioral analysis for anomaly detection",
+    "Deploy ensemble methods for better accuracy",
+    "Continuously update model with new attack patterns"
+  ]
+}

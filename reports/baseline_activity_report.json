@@ -1,0 +1,124 @@
+{
+  "simulation_timestamp": "2025-10-15T14:25:33.836961",
+  "total_users_simulated": 5,
+  "successful_sessions": 5,
+  "user_profiles": [
+    {
+      "email": "tiffany25@example.com",
+      "password": "u#lrUJ2dW0W9",
+      "first_name": "Bradley",
+      "last_name": "Thompson",
+      "security_question": "Your favorite food?",
+      "security_answer": "to"
+    },
+    {
+      "email": "ehart@example.net",
+      "password": "(y7oL^hDBw3j",
+      "first_name": "Susan",
+      "last_name": "Lee",
+      "security_question": "Your favorite food?",
+      "security_answer": "establish"
+    },
+    {
+      "email": "mitchellfrench@example.org",
+      "password": "#6ZLv#zuw!bj",
+      "first_name": "Diana",
+      "last_name": "Hurst",
+      "security_question": "Your favorite food?",
+      "security_answer": "them"
+    },
+    {
+      "email": "matthew03@example.net",
+      "password": "!+7ArQ@yb&a5",
+      "first_name": "Cindy",
+      "last_name": "Mccoy",
+      "security_question": "Your favorite food?",
+      "security_answer": "worry"
+    },
+    {
+      "email": "btaylor@example.net",
+      "password": "d0EI_kTy+WYb",
+      "first_name": "Gail",
+      "last_name": "Shannon",
+      "security_question": "Your favorite food?",
+      "security_answer": "although"
+    }
+  ],
+  "activity_log": [
+    {
+      "timestamp": "2025-10-15T14:25:01.825499",
+      "user_email": "tiffany25@example.com",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-15T14:25:08.575720",
+      "user_email": "ehart@example.net",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-15T14:25:12.079120",
+      "user_email": "mitchellfrench@example.org",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-15T14:25:32.546253",
+      "user_email": "matthew03@example.net",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-15T14:25:33.834642",
+      "user_email": "btaylor@example.net",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    }
+  ],
+  "baseline_metrics": {
+    "average_session_duration": "3-8 minutes",
+    "typical_activities": [
+      "User registration",
+      "Product search and browsing",
+      "Product detail viewing",
+      "Shopping cart operations",
+      "Review checking"
+    ],
+    "request_patterns": {
+      "average_request_size": "1-5 KB",
+      "typical_status_codes": [
+        200,
+        201,
+        304
+      ],
+      "common_endpoints": [
+        "/api/Users",
+        "/rest/user/login",
+        "/api/Products",
+        "/rest/products/search",
+        "/api/BasketItems"
+      ]
+    }
+  }
+}

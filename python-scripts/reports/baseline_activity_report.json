@@ -1,0 +1,124 @@
+{
+  "simulation_timestamp": "2025-10-16T02:23:42.799880",
+  "total_users_simulated": 5,
+  "successful_sessions": 5,
+  "user_profiles": [
+    {
+      "email": "haynesnicole@example.com",
+      "password": "4qvB1F_imP2(",
+      "first_name": "Luis",
+      "last_name": "Nichols",
+      "security_question": "Your favorite food?",
+      "security_answer": "better"
+    },
+    {
+      "email": "goodmanrobert@example.net",
+      "password": "29Q0i7Dj#gPm",
+      "first_name": "Ashley",
+      "last_name": "Jones",
+      "security_question": "Your favorite food?",
+      "security_answer": "evening"
+    },
+    {
+      "email": "okaufman@example.org",
+      "password": "Ce39ZiIG8%Xq",
+      "first_name": "Jennifer",
+      "last_name": "Rowe",
+      "security_question": "Your favorite food?",
+      "security_answer": "buy"
+    },
+    {
+      "email": "cherylsoto@example.com",
+      "password": "8@HjZR4m)YsD",
+      "first_name": "Anthony",
+      "last_name": "Chavez",
+      "security_question": "Your favorite food?",
+      "security_answer": "add"
+    },
+    {
+      "email": "charlesedwards@example.net",
+      "password": ")8v@FDBhLnHe",
+      "first_name": "William",
+      "last_name": "Miller",
+      "security_question": "Your favorite food?",
+      "security_answer": "look"
+    }
+  ],
+  "activity_log": [
+    {
+      "timestamp": "2025-10-16T02:23:02.719524",
+      "user_email": "goodmanrobert@example.net",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-16T02:23:06.030165",
+      "user_email": "okaufman@example.org",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-16T02:23:10.264219",
+      "user_email": "haynesnicole@example.com",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-16T02:23:34.100648",
+      "user_email": "cherylsoto@example.com",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    },
+    {
+      "timestamp": "2025-10-16T02:23:42.797845",
+      "user_email": "charlesedwards@example.net",
+      "activities_performed": [
+        "Browsing products",
+        "Shopping cart activities",
+        "Additional browsing"
+      ],
+      "session_duration": "2-5 minutes"
+    }
+  ],
+  "baseline_metrics": {
+    "average_session_duration": "3-8 minutes",
+    "typical_activities": [
+      "User registration",
+      "Product search and browsing",
+      "Product detail viewing",
+      "Shopping cart operations",
+      "Review checking"
+    ],
+    "request_patterns": {
+      "average_request_size": "1-5 KB",
+      "typical_status_codes": [
+        200,
+        201,
+        304
+      ],
+      "common_endpoints": [
+        "/api/Users",
+        "/rest/user/login",
+        "/api/Products",
+        "/rest/products/search",
+        "/api/BasketItems"
+      ]
+    }
+  }
+}

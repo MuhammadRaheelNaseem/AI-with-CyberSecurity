@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-16T02:39:13.614015",
+  "target": "http://localhost:3000",
+  "score": {
+    "authentication": 15,
+    "input_validation": 10,
+    "security_headers": 15,
+    "total": 40,
+    "max_possible": 100,
+    "rating": "FAIR"
+  },
+  "detailed_results": {
+    "authentication": {
+      "password_policy": "ENFORCED",
+      "lockout": "MISSING",
+      "session": "SECURE"
+    },
+    "input_validation": {
+      "status": "WEAK"
+    },
+    "security_headers": {
+      "missing": [
+        "CSP",
+        "HSTS"
+      ],
+      "status": "INCOMPLETE"
+    }
+  },
+  "recommendations": [
+    "Enforce strong password policies (min length, complexity)",
+    "Implement account lockout after 3-5 failed attempts",
+    "Add rate limiting on authentication endpoints",
+    "Sanitize and validate all user inputs",
+    "Deploy Content Security Policy (CSP)",
+    "Set security headers: X-Frame-Options, X-Content-Type-Options, HSTS"
+  ]
+}

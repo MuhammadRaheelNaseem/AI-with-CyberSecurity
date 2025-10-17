@@ -1,0 +1,84 @@
+2025-10-16 02:22:35,898 - INFO - 🚀 Starting Comprehensive Baseline Activity Simulation
+2025-10-16 02:22:35,923 - INFO - 👤 Starting session for user: haynesnicole@example.com
+2025-10-16 02:22:35,925 - INFO - 👤 Starting session for user: goodmanrobert@example.net
+2025-10-16 02:22:35,927 - INFO - 👤 Starting session for user: okaufman@example.org
+2025-10-16 02:22:36,664 - INFO - ✅ User registered: goodmanrobert@example.net
+2025-10-16 02:22:36,712 - INFO - ✅ User registered: okaufman@example.org
+2025-10-16 02:22:36,715 - INFO - ✅ User registered: haynesnicole@example.com
+2025-10-16 02:22:37,753 - INFO - ✅ User logged in: goodmanrobert@example.net
+2025-10-16 02:22:37,754 - INFO -   🎯 Browsing products
+2025-10-16 02:22:37,990 - INFO - ✅ User logged in: okaufman@example.org
+2025-10-16 02:22:37,992 - INFO -   🎯 Browsing products
+2025-10-16 02:22:38,219 - INFO - ✅ User logged in: haynesnicole@example.com
+2025-10-16 02:22:38,220 - INFO -   🎯 Browsing products
+2025-10-16 02:22:38,335 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-16 02:22:38,608 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:22:38,832 - INFO - 📄 Viewed details for product: Apple Pomace
+2025-10-16 02:22:39,899 - INFO - 🔍 Searched for 'apple', found 2 results
+2025-10-16 02:22:40,487 - INFO - 📄 Viewed details for product: OWASP Juice Shop Magnets (16pcs)
+2025-10-16 02:22:41,502 - INFO - 🔍 Searched for 'fresh', found 0 results
+2025-10-16 02:22:42,590 - INFO - 🔍 Searched for 'juice', found 29 results
+2025-10-16 02:22:42,955 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-16 02:22:43,001 - INFO - 📄 Viewed details for product: Strawberry Juice (500ml)
+2025-10-16 02:22:45,153 - INFO - 🔍 Searched for 'fresh', found 0 results
+2025-10-16 02:22:47,579 - INFO - 📂 Browsed category: /rest/products/search?q=drink
+2025-10-16 02:22:47,767 - INFO -   🎯 Shopping cart activities
+2025-10-16 02:22:48,247 - INFO - 📋 Viewed shopping cart
+2025-10-16 02:22:48,660 - INFO -   🎯 Shopping cart activities
+2025-10-16 02:22:49,035 - INFO - 📋 Viewed shopping cart
+2025-10-16 02:22:51,707 - INFO -   🎯 Additional browsing
+2025-10-16 02:22:51,777 - INFO - 🔍 Searched for 'fresh', found 0 results
+2025-10-16 02:22:51,818 - INFO -   🎯 Additional browsing
+2025-10-16 02:22:51,912 - INFO - 🔍 Searched for 'fruit', found 3 results
+2025-10-16 02:22:53,515 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-16 02:22:54,378 - INFO -   🎯 Shopping cart activities
+2025-10-16 02:22:54,707 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:22:54,882 - INFO - 📋 Viewed shopping cart
+2025-10-16 02:22:55,171 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:22:57,629 - INFO - 📄 Viewed details for product: OWASP Juice Shop CTF Girlie-Shirt
+2025-10-16 02:22:57,848 - INFO - 📂 Browsed category: /rest/products/search?q=vegetable
+2025-10-16 02:22:58,523 - INFO -   🎯 Additional browsing
+2025-10-16 02:22:58,719 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:22:59,683 - INFO - 🔍 Searched for 'banana', found 1 results
+2025-10-16 02:22:59,945 - INFO - 🔍 Searched for 'apple', found 2 results
+2025-10-16 02:23:01,261 - INFO - 🔍 Searched for 'orange', found 1 results
+2025-10-16 02:23:02,718 - INFO - 👤 Completed session for user: goodmanrobert@example.net
+2025-10-16 02:23:02,719 - INFO - 👤 Starting session for user: cherylsoto@example.com
+2025-10-16 02:23:02,825 - INFO - ✅ User registered: cherylsoto@example.com
+2025-10-16 02:23:03,940 - INFO - ✅ User logged in: cherylsoto@example.com
+2025-10-16 02:23:03,942 - INFO -   🎯 Browsing products
+2025-10-16 02:23:04,209 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:23:04,377 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:23:06,028 - INFO - 👤 Completed session for user: okaufman@example.org
+2025-10-16 02:23:06,030 - INFO - 👤 Starting session for user: charlesedwards@example.net
+2025-10-16 02:23:06,212 - INFO - ✅ User registered: charlesedwards@example.net
+2025-10-16 02:23:06,827 - INFO - 🔍 Searched for 'organic', found 0 results
+2025-10-16 02:23:07,275 - INFO - ✅ User logged in: charlesedwards@example.net
+2025-10-16 02:23:07,276 - INFO -   🎯 Browsing products
+2025-10-16 02:23:07,482 - INFO - 📄 Viewed details for product: OWASP Juice Shop Logo (3D-printed)
+2025-10-16 02:23:09,876 - INFO - 📄 Viewed details for product: Orange Juice (1000ml)
+2025-10-16 02:23:09,883 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-16 02:23:10,263 - INFO - 👤 Completed session for user: haynesnicole@example.com
+2025-10-16 02:23:11,132 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:23:11,228 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:23:13,140 - INFO - 📂 Browsed category: /rest/products/search?q=snack
+2025-10-16 02:23:13,757 - INFO - 📂 Browsed category: /rest/products/search?q=fruit
+2025-10-16 02:23:16,191 - INFO - 📄 Viewed details for product: Fruit Press
+2025-10-16 02:23:18,879 - INFO -   🎯 Shopping cart activities
+2025-10-16 02:23:19,179 - INFO - 📋 Viewed shopping cart
+2025-10-16 02:23:22,979 - INFO -   🎯 Shopping cart activities
+2025-10-16 02:23:23,399 - INFO - 📋 Viewed shopping cart
+2025-10-16 02:23:23,972 - INFO -   🎯 Additional browsing
+2025-10-16 02:23:24,227 - INFO - 📄 Viewed details for product: Quince Juice (1000ml)
+2025-10-16 02:23:25,948 - INFO - 📄 Viewed details for product: OWASP Juice Shop Mug
+2025-10-16 02:23:27,825 - INFO -   🎯 Additional browsing
+2025-10-16 02:23:28,420 - INFO - 📄 Viewed details for product: OWASP Snakes and Ladders - Mobile Apps
+2025-10-16 02:23:28,422 - INFO - 📄 Viewed details for product: Juice Shop "Permafrost" 2020 Edition
+2025-10-16 02:23:29,588 - INFO - 🔍 Searched for 'banana', found 1 results
+2025-10-16 02:23:31,412 - INFO - 🔍 Searched for 'juice', found 29 results
+2025-10-16 02:23:33,029 - INFO - 🔍 Searched for 'apple', found 2 results
+2025-10-16 02:23:34,099 - INFO - 👤 Completed session for user: cherylsoto@example.com
+2025-10-16 02:23:34,574 - INFO - 📄 Viewed details for product: Green Smoothie
+2025-10-16 02:23:36,923 - INFO - ⭐ Checked 8 product reviews
+2025-10-16 02:23:42,796 - INFO - 👤 Completed session for user: charlesedwards@example.net
+2025-10-16 02:23:42,805 - INFO - 📊 Baseline report generated: ../reports/baseline_activity_report.json

